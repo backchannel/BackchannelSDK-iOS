@@ -1,0 +1,1193 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1834FE1B952515008DF301 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1834FD1B952515008DF301 /* APIKey.plist */; };
+		1A62D0E91B501AE600FFD227 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A62D0E81B501AE600FFD227 /* BCRootViewController.m */; };
+		341DAFDE1B02878D008AF145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFDD1B02878D008AF145 /* main.m */; };
+		341DAFE11B02878D008AF145 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFE01B02878D008AF145 /* AppDelegate.m */; };
+		341DAFFB1B02878D008AF145 /* BackchannelSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFFA1B02878D008AF145 /* BackchannelSDKTests.m */; };
+		346E36BF1BDB99C300C90359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346E35E61BDB99C300C90359 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		346E36C01BDB99C300C90359 /* BAKAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C11BDB99C300C90359 /* BAKAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C21BDB99C300C90359 /* BAKAuthenticationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C31BDB99C300C90359 /* BAKAuthenticationForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F21BDB99C300C90359 /* BAKAuthenticationForm.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C41BDB99C300C90359 /* BAKAuthenticationFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F41BDB99C300C90359 /* BAKAuthenticationFormLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C51BDB99C300C90359 /* BAKAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F61BDB99C300C90359 /* BAKAuthenticationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C61BDB99C300C90359 /* BAKCreateAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F81BDB99C300C90359 /* BAKCreateAccountRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C71BDB99C300C90359 /* BAKLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FA1BDB99C300C90359 /* BAKLogoutRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C81BDB99C300C90359 /* BAKSignInRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FC1BDB99C300C90359 /* BAKSignInRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36C91BDB99C300C90359 /* BAKForgotPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FF1BDB99C300C90359 /* BAKForgotPasswordRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CA1BDB99C300C90359 /* BAKForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36011BDB99C300C90359 /* BAKForgotPasswordView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CB1BDB99C300C90359 /* BAKForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36031BDB99C300C90359 /* BAKForgotPasswordViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CC1BDB99C300C90359 /* BAKAuthenticationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36051BDB99C300C90359 /* BAKAuthenticationButton.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CD1BDB99C300C90359 /* BAKAuthenticationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36071BDB99C300C90359 /* BAKAuthenticationCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CE1BDB99C300C90359 /* BAKCreateProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36091BDB99C300C90359 /* BAKCreateProfileCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36CF1BDB99C300C90359 /* BAKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360B1BDB99C300C90359 /* BAKKeychain.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D01BDB99C300C90359 /* BAKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360D1BDB99C300C90359 /* BAKSession.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D11BDB99C300C90359 /* BAKProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36101BDB99C300C90359 /* BAKProfile.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D21BDB99C300C90359 /* BAKProfileFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36121BDB99C300C90359 /* BAKProfileFormView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D31BDB99C300C90359 /* BAKProfileFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36141BDB99C300C90359 /* BAKProfileFormViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D41BDB99C300C90359 /* BAKProfileLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36161BDB99C300C90359 /* BAKProfileLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D51BDB99C300C90359 /* BAKUpdateProfileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36181BDB99C300C90359 /* BAKUpdateProfileRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D61BDB99C300C90359 /* BAKFirstRunLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361B1BDB99C300C90359 /* BAKFirstRunLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D71BDB99C300C90359 /* BAKFirstRunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361D1BDB99C300C90359 /* BAKFirstRunView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D81BDB99C300C90359 /* BAKFirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361F1BDB99C300C90359 /* BAKFirstRunViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36D91BDB99C300C90359 /* Backchannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36211BDB99C300C90359 /* Backchannel.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DA1BDB99C300C90359 /* BAKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36231BDB99C300C90359 /* BAKColor.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DB1BDB99C300C90359 /* BAKErrorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36251BDB99C300C90359 /* BAKErrorPresenter.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DC1BDB99C300C90359 /* BAKMessagesCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36271BDB99C300C90359 /* BAKMessagesCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DD1BDB99C300C90359 /* BAKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36291BDB99C300C90359 /* BAKUser.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DE1BDB99C300C90359 /* BAKAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362C1BDB99C300C90359 /* BAKAppData.m */; settings = {ASSET_TAGS = (); }; };
+		346E36DF1BDB99C300C90359 /* BAKChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362E1BDB99C300C90359 /* BAKChannel.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E01BDB99C300C90359 /* BAKChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36301BDB99C300C90359 /* BAKChannelCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E11BDB99C300C90359 /* BAKChannelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36321BDB99C300C90359 /* BAKChannelHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E21BDB99C300C90359 /* BAKChannelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36341BDB99C300C90359 /* BAKChannelLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E31BDB99C300C90359 /* BAKChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36361BDB99C300C90359 /* BAKChannelListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E41BDB99C300C90359 /* BAKChannelsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36381BDB99C300C90359 /* BAKChannelsRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E51BDB99C300C90359 /* BAKAttachmentButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363C1BDB99C300C90359 /* BAKAttachmentButtonCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E61BDB99C300C90359 /* BAKAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363E1BDB99C300C90359 /* BAKAttachmentCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E71BDB99C300C90359 /* BAKAttachmentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36401BDB99C300C90359 /* BAKAttachmentContainer.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E81BDB99C300C90359 /* BAKAttachmentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36421BDB99C300C90359 /* BAKAttachmentsDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		346E36E91BDB99C300C90359 /* BAKAttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36441BDB99C300C90359 /* BAKAttachmentsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36EA1BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36461BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36EB1BDB99C300C90359 /* BAKCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36481BDB99C300C90359 /* BAKCreateMessageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36EC1BDB99C300C90359 /* BAKCreateMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364A1BDB99C300C90359 /* BAKCreateMessageRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36ED1BDB99C300C90359 /* BAKCreateThreadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364C1BDB99C300C90359 /* BAKCreateThreadRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36EE1BDB99C300C90359 /* BAKMessageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364E1BDB99C300C90359 /* BAKMessageCreator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36EF1BDB99C300C90359 /* BAKMessageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36501BDB99C300C90359 /* BAKMessageMetadata.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F01BDB99C300C90359 /* BAKChannelPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F11BDB99C300C90359 /* BAKDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36551BDB99C300C90359 /* BAKDraft.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F21BDB99C300C90359 /* BAKMessageFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36571BDB99C300C90359 /* BAKMessageFormLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F31BDB99C300C90359 /* BAKMessageFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36591BDB99C300C90359 /* BAKMessageFormView.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F41BDB99C300C90359 /* BAKMessageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365B1BDB99C300C90359 /* BAKMessageFormViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F51BDB99C300C90359 /* BAKCurrentSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365E1BDB99C300C90359 /* BAKCurrentSessionRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F61BDB99C300C90359 /* BAKCurrentUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36601BDB99C300C90359 /* BAKCurrentUserStore.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F71BDB99C300C90359 /* BAKEditProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36621BDB99C300C90359 /* BAKEditProfileCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F81BDB99C300C90359 /* BAKFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36651BDB99C300C90359 /* BAKFormField.m */; settings = {ASSET_TAGS = (); }; };
+		346E36F91BDB99C300C90359 /* BAKFormGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36671BDB99C300C90359 /* BAKFormGroup.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FA1BDB99C300C90359 /* BAKGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366A1BDB99C300C90359 /* BAKGeometry.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FB1BDB99C300C90359 /* BAKMappedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366C1BDB99C300C90359 /* BAKMappedArray.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FC1BDB99C300C90359 /* BAKAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366F1BDB99C300C90359 /* BAKAttachment.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FD1BDB99C300C90359 /* BAKAttachmentUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36711BDB99C300C90359 /* BAKAttachmentUploader.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FE1BDB99C300C90359 /* BAKChooseImageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36731BDB99C300C90359 /* BAKChooseImageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E36FF1BDB99C300C90359 /* BAKMultipartRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36751BDB99C300C90359 /* BAKMultipartRequestBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		346E37001BDB99C300C90359 /* BAKUploadAttachmentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36771BDB99C300C90359 /* BAKUploadAttachmentRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E37011BDB99C300C90359 /* BAKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367A1BDB99C300C90359 /* BAKMessage.m */; settings = {ASSET_TAGS = (); }; };
+		346E37021BDB99C300C90359 /* BAKMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367C1BDB99C300C90359 /* BAKMessageCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E37031BDB99C300C90359 /* BAKMessageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367E1BDB99C300C90359 /* BAKMessageLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E37041BDB99C300C90359 /* BAKMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36801BDB99C300C90359 /* BAKMessageListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E37051BDB99C300C90359 /* BAKMessagesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36821BDB99C300C90359 /* BAKMessagesRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E37061BDB99C300C90359 /* BAKMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36841BDB99C300C90359 /* BAKMessageView.m */; settings = {ASSET_TAGS = (); }; };
+		346E37071BDB99C300C90359 /* BAKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36861BDB99C300C90359 /* BAKMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E37081BDB99C300C90359 /* BAKShortDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36881BDB99C300C90359 /* BAKShortDate.m */; settings = {ASSET_TAGS = (); }; };
+		346E37091BDB99C300C90359 /* BAKViewControllerRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368A1BDB99C300C90359 /* BAKViewControllerRecycler.m */; settings = {ASSET_TAGS = (); }; };
+		346E370A1BDB99C300C90359 /* BAKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368E1BDB99C300C90359 /* BAKLoadingView.m */; settings = {ASSET_TAGS = (); }; };
+		346E370B1BDB99C300C90359 /* BAKPaginatableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36901BDB99C300C90359 /* BAKPaginatableRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E370C1BDB99C300C90359 /* BAKRemoteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36921BDB99C300C90359 /* BAKRemoteConfiguration.m */; settings = {ASSET_TAGS = (); }; };
+		346E370D1BDB99C300C90359 /* BAKRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36941BDB99C300C90359 /* BAKRequestBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		346E370E1BDB99C300C90359 /* BAKResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36971BDB99C300C90359 /* BAKResponseHandler.m */; settings = {ASSET_TAGS = (); }; };
+		346E370F1BDB99C300C90359 /* BAKSafeRequestTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36991BDB99C300C90359 /* BAKSafeRequestTemplate.m */; settings = {ASSET_TAGS = (); }; };
+		346E37101BDB99C300C90359 /* BAKSendableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369B1BDB99C300C90359 /* BAKSendableRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E37111BDB99C300C90359 /* BAKAssetFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369E1BDB99C300C90359 /* BAKAssetFetcher.m */; settings = {ASSET_TAGS = (); }; };
+		346E37121BDB99C300C90359 /* BAKChannelsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A01BDB99C300C90359 /* BAKChannelsStore.m */; settings = {ASSET_TAGS = (); }; };
+		346E37131BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A21BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m */; settings = {ASSET_TAGS = (); }; };
+		346E37141BDB99C300C90359 /* BAKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A51BDB99C300C90359 /* BAKCache.m */; settings = {ASSET_TAGS = (); }; };
+		346E37151BDB99C300C90359 /* BAKLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A71BDB99C300C90359 /* BAKLoadingCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E37161BDB99C300C90359 /* BAKPaginatedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A91BDB99C300C90359 /* BAKPaginatedFetcher.m */; settings = {ASSET_TAGS = (); }; };
+		346E37171BDB99C300C90359 /* BAKRemoteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AB1BDB99C300C90359 /* BAKRemoteDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		346E37181BDB99C300C90359 /* BAKSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AD1BDB99C300C90359 /* BAKSection.m */; settings = {ASSET_TAGS = (); }; };
+		346E37191BDB99C300C90359 /* BAKTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AF1BDB99C300C90359 /* BAKTableData.m */; settings = {ASSET_TAGS = (); }; };
+		346E371A1BDB99C300C90359 /* BAKTableTopSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B11BDB99C300C90359 /* BAKTableTopSeparator.m */; settings = {ASSET_TAGS = (); }; };
+		346E371B1BDB99C300C90359 /* BAKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B31BDB99C300C90359 /* BAKTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E371C1BDB99C300C90359 /* BAKThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B61BDB99C300C90359 /* BAKThread.m */; settings = {ASSET_TAGS = (); }; };
+		346E371D1BDB99C300C90359 /* BAKThreadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B81BDB99C300C90359 /* BAKThreadCell.m */; settings = {ASSET_TAGS = (); }; };
+		346E371E1BDB99C300C90359 /* BAKThreadLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BA1BDB99C300C90359 /* BAKThreadLayout.m */; settings = {ASSET_TAGS = (); }; };
+		346E371F1BDB99C300C90359 /* BAKThreadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */; settings = {ASSET_TAGS = (); }; };
+		34BDC3871BDCF65C00DDF345 /* BAKDeleteMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		341DAFF51B02878D008AF145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341DAFD01B02878D008AF145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 341DAFD71B02878D008AF145;
+			remoteInfo = BackchannelSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1834FD1B952515008DF301 /* APIKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
+		1A62D0E71B501AE600FFD227 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
+		1A62D0E81B501AE600FFD227 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
+		341DAFD81B02878D008AF145 /* BackchannelSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackchannelSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		341DAFDC1B02878D008AF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341DAFDD1B02878D008AF145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		341DAFDF1B02878D008AF145 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		341DAFE01B02878D008AF145 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		341DAFF41B02878D008AF145 /* BackchannelSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackchannelSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		341DAFF91B02878D008AF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341DAFFA1B02878D008AF145 /* BackchannelSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackchannelSDKTests.m; sourceTree = "<group>"; };
+		346E35E61BDB99C300C90359 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		346E35E91BDB99C300C90359 /* BAKAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentView.h; sourceTree = "<group>"; };
+		346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentView.m; sourceTree = "<group>"; };
+		346E35EB1BDB99C300C90359 /* BAKAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentViewController.h; sourceTree = "<group>"; };
+		346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentViewController.m; sourceTree = "<group>"; };
+		346E35EF1BDB99C300C90359 /* BAKAuthenticationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationData.h; sourceTree = "<group>"; };
+		346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationData.m; sourceTree = "<group>"; };
+		346E35F11BDB99C300C90359 /* BAKAuthenticationForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationForm.h; sourceTree = "<group>"; };
+		346E35F21BDB99C300C90359 /* BAKAuthenticationForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationForm.m; sourceTree = "<group>"; };
+		346E35F31BDB99C300C90359 /* BAKAuthenticationFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationFormLayout.h; sourceTree = "<group>"; };
+		346E35F41BDB99C300C90359 /* BAKAuthenticationFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationFormLayout.m; sourceTree = "<group>"; };
+		346E35F51BDB99C300C90359 /* BAKAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationViewController.h; sourceTree = "<group>"; };
+		346E35F61BDB99C300C90359 /* BAKAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationViewController.m; sourceTree = "<group>"; };
+		346E35F71BDB99C300C90359 /* BAKCreateAccountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCreateAccountRequest.h; sourceTree = "<group>"; };
+		346E35F81BDB99C300C90359 /* BAKCreateAccountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCreateAccountRequest.m; sourceTree = "<group>"; };
+		346E35F91BDB99C300C90359 /* BAKLogoutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKLogoutRequest.h; sourceTree = "<group>"; };
+		346E35FA1BDB99C300C90359 /* BAKLogoutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKLogoutRequest.m; sourceTree = "<group>"; };
+		346E35FB1BDB99C300C90359 /* BAKSignInRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKSignInRequest.h; sourceTree = "<group>"; };
+		346E35FC1BDB99C300C90359 /* BAKSignInRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKSignInRequest.m; sourceTree = "<group>"; };
+		346E35FE1BDB99C300C90359 /* BAKForgotPasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKForgotPasswordRequest.h; sourceTree = "<group>"; };
+		346E35FF1BDB99C300C90359 /* BAKForgotPasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKForgotPasswordRequest.m; sourceTree = "<group>"; };
+		346E36001BDB99C300C90359 /* BAKForgotPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKForgotPasswordView.h; sourceTree = "<group>"; };
+		346E36011BDB99C300C90359 /* BAKForgotPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKForgotPasswordView.m; sourceTree = "<group>"; };
+		346E36021BDB99C300C90359 /* BAKForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKForgotPasswordViewController.h; sourceTree = "<group>"; };
+		346E36031BDB99C300C90359 /* BAKForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKForgotPasswordViewController.m; sourceTree = "<group>"; };
+		346E36041BDB99C300C90359 /* BAKAuthenticationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationButton.h; sourceTree = "<group>"; };
+		346E36051BDB99C300C90359 /* BAKAuthenticationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationButton.m; sourceTree = "<group>"; };
+		346E36061BDB99C300C90359 /* BAKAuthenticationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticationCoordinator.h; sourceTree = "<group>"; };
+		346E36071BDB99C300C90359 /* BAKAuthenticationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticationCoordinator.m; sourceTree = "<group>"; };
+		346E36081BDB99C300C90359 /* BAKCreateProfileCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCreateProfileCoordinator.h; sourceTree = "<group>"; };
+		346E36091BDB99C300C90359 /* BAKCreateProfileCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCreateProfileCoordinator.m; sourceTree = "<group>"; };
+		346E360A1BDB99C300C90359 /* BAKKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKKeychain.h; sourceTree = "<group>"; };
+		346E360B1BDB99C300C90359 /* BAKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKKeychain.m; sourceTree = "<group>"; };
+		346E360C1BDB99C300C90359 /* BAKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKSession.h; sourceTree = "<group>"; };
+		346E360D1BDB99C300C90359 /* BAKSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKSession.m; sourceTree = "<group>"; };
+		346E360F1BDB99C300C90359 /* BAKProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKProfile.h; sourceTree = "<group>"; };
+		346E36101BDB99C300C90359 /* BAKProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKProfile.m; sourceTree = "<group>"; };
+		346E36111BDB99C300C90359 /* BAKProfileFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKProfileFormView.h; sourceTree = "<group>"; };
+		346E36121BDB99C300C90359 /* BAKProfileFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKProfileFormView.m; sourceTree = "<group>"; };
+		346E36131BDB99C300C90359 /* BAKProfileFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKProfileFormViewController.h; sourceTree = "<group>"; };
+		346E36141BDB99C300C90359 /* BAKProfileFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKProfileFormViewController.m; sourceTree = "<group>"; };
+		346E36151BDB99C300C90359 /* BAKProfileLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKProfileLayout.h; sourceTree = "<group>"; };
+		346E36161BDB99C300C90359 /* BAKProfileLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKProfileLayout.m; sourceTree = "<group>"; };
+		346E36171BDB99C300C90359 /* BAKUpdateProfileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKUpdateProfileRequest.h; sourceTree = "<group>"; };
+		346E36181BDB99C300C90359 /* BAKUpdateProfileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKUpdateProfileRequest.m; sourceTree = "<group>"; };
+		346E361A1BDB99C300C90359 /* BAKFirstRunLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKFirstRunLayout.h; sourceTree = "<group>"; };
+		346E361B1BDB99C300C90359 /* BAKFirstRunLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKFirstRunLayout.m; sourceTree = "<group>"; };
+		346E361C1BDB99C300C90359 /* BAKFirstRunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKFirstRunView.h; sourceTree = "<group>"; };
+		346E361D1BDB99C300C90359 /* BAKFirstRunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKFirstRunView.m; sourceTree = "<group>"; };
+		346E361E1BDB99C300C90359 /* BAKFirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKFirstRunViewController.h; sourceTree = "<group>"; };
+		346E361F1BDB99C300C90359 /* BAKFirstRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKFirstRunViewController.m; sourceTree = "<group>"; };
+		346E36201BDB99C300C90359 /* Backchannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backchannel.h; sourceTree = "<group>"; };
+		346E36211BDB99C300C90359 /* Backchannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Backchannel.m; sourceTree = "<group>"; };
+		346E36221BDB99C300C90359 /* BAKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKColor.h; sourceTree = "<group>"; };
+		346E36231BDB99C300C90359 /* BAKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKColor.m; sourceTree = "<group>"; };
+		346E36241BDB99C300C90359 /* BAKErrorPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKErrorPresenter.h; sourceTree = "<group>"; };
+		346E36251BDB99C300C90359 /* BAKErrorPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKErrorPresenter.m; sourceTree = "<group>"; };
+		346E36261BDB99C300C90359 /* BAKMessagesCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessagesCoordinator.h; sourceTree = "<group>"; };
+		346E36271BDB99C300C90359 /* BAKMessagesCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessagesCoordinator.m; sourceTree = "<group>"; };
+		346E36281BDB99C300C90359 /* BAKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKUser.h; sourceTree = "<group>"; };
+		346E36291BDB99C300C90359 /* BAKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKUser.m; sourceTree = "<group>"; };
+		346E362B1BDB99C300C90359 /* BAKAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAppData.h; sourceTree = "<group>"; };
+		346E362C1BDB99C300C90359 /* BAKAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAppData.m; sourceTree = "<group>"; };
+		346E362D1BDB99C300C90359 /* BAKChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannel.h; sourceTree = "<group>"; };
+		346E362E1BDB99C300C90359 /* BAKChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannel.m; sourceTree = "<group>"; };
+		346E362F1BDB99C300C90359 /* BAKChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelCell.h; sourceTree = "<group>"; };
+		346E36301BDB99C300C90359 /* BAKChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelCell.m; sourceTree = "<group>"; };
+		346E36311BDB99C300C90359 /* BAKChannelHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelHeaderView.h; sourceTree = "<group>"; };
+		346E36321BDB99C300C90359 /* BAKChannelHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelHeaderView.m; sourceTree = "<group>"; };
+		346E36331BDB99C300C90359 /* BAKChannelLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelLayout.h; sourceTree = "<group>"; };
+		346E36341BDB99C300C90359 /* BAKChannelLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelLayout.m; sourceTree = "<group>"; };
+		346E36351BDB99C300C90359 /* BAKChannelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelListViewController.h; sourceTree = "<group>"; };
+		346E36361BDB99C300C90359 /* BAKChannelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelListViewController.m; sourceTree = "<group>"; };
+		346E36371BDB99C300C90359 /* BAKChannelsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelsRequest.h; sourceTree = "<group>"; };
+		346E36381BDB99C300C90359 /* BAKChannelsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelsRequest.m; sourceTree = "<group>"; };
+		346E363B1BDB99C300C90359 /* BAKAttachmentButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentButtonCell.h; sourceTree = "<group>"; };
+		346E363C1BDB99C300C90359 /* BAKAttachmentButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentButtonCell.m; sourceTree = "<group>"; };
+		346E363D1BDB99C300C90359 /* BAKAttachmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentCell.h; sourceTree = "<group>"; };
+		346E363E1BDB99C300C90359 /* BAKAttachmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentCell.m; sourceTree = "<group>"; };
+		346E363F1BDB99C300C90359 /* BAKAttachmentContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentContainer.h; sourceTree = "<group>"; };
+		346E36401BDB99C300C90359 /* BAKAttachmentContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentContainer.m; sourceTree = "<group>"; };
+		346E36411BDB99C300C90359 /* BAKAttachmentsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentsDataSource.h; sourceTree = "<group>"; };
+		346E36421BDB99C300C90359 /* BAKAttachmentsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentsDataSource.m; sourceTree = "<group>"; };
+		346E36431BDB99C300C90359 /* BAKAttachmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentsViewController.h; sourceTree = "<group>"; };
+		346E36441BDB99C300C90359 /* BAKAttachmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentsViewController.m; sourceTree = "<group>"; };
+		346E36451BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAuthenticatingCreateMessageCoordinator.h; sourceTree = "<group>"; };
+		346E36461BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAuthenticatingCreateMessageCoordinator.m; sourceTree = "<group>"; };
+		346E36471BDB99C300C90359 /* BAKCreateMessageCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCreateMessageCoordinator.h; sourceTree = "<group>"; };
+		346E36481BDB99C300C90359 /* BAKCreateMessageCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCreateMessageCoordinator.m; sourceTree = "<group>"; };
+		346E36491BDB99C300C90359 /* BAKCreateMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCreateMessageRequest.h; sourceTree = "<group>"; };
+		346E364A1BDB99C300C90359 /* BAKCreateMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCreateMessageRequest.m; sourceTree = "<group>"; };
+		346E364B1BDB99C300C90359 /* BAKCreateThreadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCreateThreadRequest.h; sourceTree = "<group>"; };
+		346E364C1BDB99C300C90359 /* BAKCreateThreadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCreateThreadRequest.m; sourceTree = "<group>"; };
+		346E364D1BDB99C300C90359 /* BAKMessageCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageCreator.h; sourceTree = "<group>"; };
+		346E364E1BDB99C300C90359 /* BAKMessageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageCreator.m; sourceTree = "<group>"; };
+		346E364F1BDB99C300C90359 /* BAKMessageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageMetadata.h; sourceTree = "<group>"; };
+		346E36501BDB99C300C90359 /* BAKMessageMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageMetadata.m; sourceTree = "<group>"; };
+		346E36521BDB99C300C90359 /* BAKChannelPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelPickerViewController.h; sourceTree = "<group>"; };
+		346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelPickerViewController.m; sourceTree = "<group>"; };
+		346E36541BDB99C300C90359 /* BAKDraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKDraft.h; sourceTree = "<group>"; };
+		346E36551BDB99C300C90359 /* BAKDraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKDraft.m; sourceTree = "<group>"; };
+		346E36561BDB99C300C90359 /* BAKMessageFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageFormLayout.h; sourceTree = "<group>"; };
+		346E36571BDB99C300C90359 /* BAKMessageFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageFormLayout.m; sourceTree = "<group>"; };
+		346E36581BDB99C300C90359 /* BAKMessageFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageFormView.h; sourceTree = "<group>"; };
+		346E36591BDB99C300C90359 /* BAKMessageFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageFormView.m; sourceTree = "<group>"; };
+		346E365A1BDB99C300C90359 /* BAKMessageFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageFormViewController.h; sourceTree = "<group>"; };
+		346E365B1BDB99C300C90359 /* BAKMessageFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageFormViewController.m; sourceTree = "<group>"; };
+		346E365D1BDB99C300C90359 /* BAKCurrentSessionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCurrentSessionRequest.h; sourceTree = "<group>"; };
+		346E365E1BDB99C300C90359 /* BAKCurrentSessionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCurrentSessionRequest.m; sourceTree = "<group>"; };
+		346E365F1BDB99C300C90359 /* BAKCurrentUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCurrentUserStore.h; sourceTree = "<group>"; };
+		346E36601BDB99C300C90359 /* BAKCurrentUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCurrentUserStore.m; sourceTree = "<group>"; };
+		346E36611BDB99C300C90359 /* BAKEditProfileCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKEditProfileCoordinator.h; sourceTree = "<group>"; };
+		346E36621BDB99C300C90359 /* BAKEditProfileCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKEditProfileCoordinator.m; sourceTree = "<group>"; };
+		346E36641BDB99C300C90359 /* BAKFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKFormField.h; sourceTree = "<group>"; };
+		346E36651BDB99C300C90359 /* BAKFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKFormField.m; sourceTree = "<group>"; };
+		346E36661BDB99C300C90359 /* BAKFormGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKFormGroup.h; sourceTree = "<group>"; };
+		346E36671BDB99C300C90359 /* BAKFormGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKFormGroup.m; sourceTree = "<group>"; };
+		346E36691BDB99C300C90359 /* BAKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKGeometry.h; sourceTree = "<group>"; };
+		346E366A1BDB99C300C90359 /* BAKGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKGeometry.m; sourceTree = "<group>"; };
+		346E366B1BDB99C300C90359 /* BAKMappedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMappedArray.h; sourceTree = "<group>"; };
+		346E366C1BDB99C300C90359 /* BAKMappedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMappedArray.m; sourceTree = "<group>"; };
+		346E366E1BDB99C300C90359 /* BAKAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachment.h; sourceTree = "<group>"; };
+		346E366F1BDB99C300C90359 /* BAKAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachment.m; sourceTree = "<group>"; };
+		346E36701BDB99C300C90359 /* BAKAttachmentUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAttachmentUploader.h; sourceTree = "<group>"; };
+		346E36711BDB99C300C90359 /* BAKAttachmentUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAttachmentUploader.m; sourceTree = "<group>"; };
+		346E36721BDB99C300C90359 /* BAKChooseImageCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChooseImageCoordinator.h; sourceTree = "<group>"; };
+		346E36731BDB99C300C90359 /* BAKChooseImageCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChooseImageCoordinator.m; sourceTree = "<group>"; };
+		346E36741BDB99C300C90359 /* BAKMultipartRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMultipartRequestBuilder.h; sourceTree = "<group>"; };
+		346E36751BDB99C300C90359 /* BAKMultipartRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMultipartRequestBuilder.m; sourceTree = "<group>"; };
+		346E36761BDB99C300C90359 /* BAKUploadAttachmentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKUploadAttachmentRequest.h; sourceTree = "<group>"; };
+		346E36771BDB99C300C90359 /* BAKUploadAttachmentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKUploadAttachmentRequest.m; sourceTree = "<group>"; };
+		346E36791BDB99C300C90359 /* BAKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessage.h; sourceTree = "<group>"; };
+		346E367A1BDB99C300C90359 /* BAKMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessage.m; sourceTree = "<group>"; };
+		346E367B1BDB99C300C90359 /* BAKMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageCell.h; sourceTree = "<group>"; };
+		346E367C1BDB99C300C90359 /* BAKMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageCell.m; sourceTree = "<group>"; };
+		346E367D1BDB99C300C90359 /* BAKMessageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageLayout.h; sourceTree = "<group>"; };
+		346E367E1BDB99C300C90359 /* BAKMessageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageLayout.m; sourceTree = "<group>"; };
+		346E367F1BDB99C300C90359 /* BAKMessageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageListViewController.h; sourceTree = "<group>"; };
+		346E36801BDB99C300C90359 /* BAKMessageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageListViewController.m; sourceTree = "<group>"; };
+		346E36811BDB99C300C90359 /* BAKMessagesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessagesRequest.h; sourceTree = "<group>"; };
+		346E36821BDB99C300C90359 /* BAKMessagesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessagesRequest.m; sourceTree = "<group>"; };
+		346E36831BDB99C300C90359 /* BAKMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageView.h; sourceTree = "<group>"; };
+		346E36841BDB99C300C90359 /* BAKMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageView.m; sourceTree = "<group>"; };
+		346E36851BDB99C300C90359 /* BAKMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageViewController.h; sourceTree = "<group>"; };
+		346E36861BDB99C300C90359 /* BAKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageViewController.m; sourceTree = "<group>"; };
+		346E36871BDB99C300C90359 /* BAKShortDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKShortDate.h; sourceTree = "<group>"; };
+		346E36881BDB99C300C90359 /* BAKShortDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKShortDate.m; sourceTree = "<group>"; };
+		346E36891BDB99C300C90359 /* BAKViewControllerRecycler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKViewControllerRecycler.h; sourceTree = "<group>"; };
+		346E368A1BDB99C300C90359 /* BAKViewControllerRecycler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKViewControllerRecycler.m; sourceTree = "<group>"; };
+		346E368C1BDB99C300C90359 /* BAKLoadableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKLoadableView.h; sourceTree = "<group>"; };
+		346E368D1BDB99C300C90359 /* BAKLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKLoadingView.h; sourceTree = "<group>"; };
+		346E368E1BDB99C300C90359 /* BAKLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKLoadingView.m; sourceTree = "<group>"; };
+		346E368F1BDB99C300C90359 /* BAKPaginatableRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKPaginatableRequest.h; sourceTree = "<group>"; };
+		346E36901BDB99C300C90359 /* BAKPaginatableRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKPaginatableRequest.m; sourceTree = "<group>"; };
+		346E36911BDB99C300C90359 /* BAKRemoteConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKRemoteConfiguration.h; sourceTree = "<group>"; };
+		346E36921BDB99C300C90359 /* BAKRemoteConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKRemoteConfiguration.m; sourceTree = "<group>"; };
+		346E36931BDB99C300C90359 /* BAKRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKRequestBuilder.h; sourceTree = "<group>"; };
+		346E36941BDB99C300C90359 /* BAKRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKRequestBuilder.m; sourceTree = "<group>"; };
+		346E36951BDB99C300C90359 /* BAKRequestTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKRequestTemplate.h; sourceTree = "<group>"; };
+		346E36961BDB99C300C90359 /* BAKResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKResponseHandler.h; sourceTree = "<group>"; };
+		346E36971BDB99C300C90359 /* BAKResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKResponseHandler.m; sourceTree = "<group>"; };
+		346E36981BDB99C300C90359 /* BAKSafeRequestTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKSafeRequestTemplate.h; sourceTree = "<group>"; };
+		346E36991BDB99C300C90359 /* BAKSafeRequestTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKSafeRequestTemplate.m; sourceTree = "<group>"; };
+		346E369A1BDB99C300C90359 /* BAKSendableRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKSendableRequest.h; sourceTree = "<group>"; };
+		346E369B1BDB99C300C90359 /* BAKSendableRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKSendableRequest.m; sourceTree = "<group>"; };
+		346E369D1BDB99C300C90359 /* BAKAssetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKAssetFetcher.h; sourceTree = "<group>"; };
+		346E369E1BDB99C300C90359 /* BAKAssetFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKAssetFetcher.m; sourceTree = "<group>"; };
+		346E369F1BDB99C300C90359 /* BAKChannelsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelsStore.h; sourceTree = "<group>"; };
+		346E36A01BDB99C300C90359 /* BAKChannelsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelsStore.m; sourceTree = "<group>"; };
+		346E36A11BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKScreenshotDetectionCoordinator.h; sourceTree = "<group>"; };
+		346E36A21BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKScreenshotDetectionCoordinator.m; sourceTree = "<group>"; };
+		346E36A41BDB99C300C90359 /* BAKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKCache.h; sourceTree = "<group>"; };
+		346E36A51BDB99C300C90359 /* BAKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKCache.m; sourceTree = "<group>"; };
+		346E36A61BDB99C300C90359 /* BAKLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKLoadingCell.h; sourceTree = "<group>"; };
+		346E36A71BDB99C300C90359 /* BAKLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKLoadingCell.m; sourceTree = "<group>"; };
+		346E36A81BDB99C300C90359 /* BAKPaginatedFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKPaginatedFetcher.h; sourceTree = "<group>"; };
+		346E36A91BDB99C300C90359 /* BAKPaginatedFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKPaginatedFetcher.m; sourceTree = "<group>"; };
+		346E36AA1BDB99C300C90359 /* BAKRemoteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKRemoteDataSource.h; sourceTree = "<group>"; };
+		346E36AB1BDB99C300C90359 /* BAKRemoteDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKRemoteDataSource.m; sourceTree = "<group>"; };
+		346E36AC1BDB99C300C90359 /* BAKSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKSection.h; sourceTree = "<group>"; };
+		346E36AD1BDB99C300C90359 /* BAKSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKSection.m; sourceTree = "<group>"; };
+		346E36AE1BDB99C300C90359 /* BAKTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKTableData.h; sourceTree = "<group>"; };
+		346E36AF1BDB99C300C90359 /* BAKTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKTableData.m; sourceTree = "<group>"; };
+		346E36B01BDB99C300C90359 /* BAKTableTopSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKTableTopSeparator.h; sourceTree = "<group>"; };
+		346E36B11BDB99C300C90359 /* BAKTableTopSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKTableTopSeparator.m; sourceTree = "<group>"; };
+		346E36B21BDB99C300C90359 /* BAKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKTableViewController.h; sourceTree = "<group>"; };
+		346E36B31BDB99C300C90359 /* BAKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKTableViewController.m; sourceTree = "<group>"; };
+		346E36B51BDB99C300C90359 /* BAKThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKThread.h; sourceTree = "<group>"; };
+		346E36B61BDB99C300C90359 /* BAKThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThread.m; sourceTree = "<group>"; };
+		346E36B71BDB99C300C90359 /* BAKThreadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKThreadCell.h; sourceTree = "<group>"; };
+		346E36B81BDB99C300C90359 /* BAKThreadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThreadCell.m; sourceTree = "<group>"; };
+		346E36B91BDB99C300C90359 /* BAKThreadLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKThreadLayout.h; sourceTree = "<group>"; };
+		346E36BA1BDB99C300C90359 /* BAKThreadLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThreadLayout.m; sourceTree = "<group>"; };
+		346E36BB1BDB99C300C90359 /* BAKThreadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKThreadListViewController.h; sourceTree = "<group>"; };
+		346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThreadListViewController.m; sourceTree = "<group>"; };
+		346E36BD1BDB99C300C90359 /* BAKThreadsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKThreadsRequest.h; sourceTree = "<group>"; };
+		346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThreadsRequest.m; sourceTree = "<group>"; };
+		34BDC3851BDCF65C00DDF345 /* BAKDeleteMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKDeleteMessageRequest.h; sourceTree = "<group>"; };
+		34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKDeleteMessageRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		341DAFD51B02878D008AF145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		341DAFF11B02878D008AF145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		341DAFCF1B02878D008AF145 = {
+			isa = PBXGroup;
+			children = (
+				341DAFDA1B02878D008AF145 /* BackchannelSDK */,
+				341DAFF71B02878D008AF145 /* BackchannelSDKTests */,
+				341DAFD91B02878D008AF145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		341DAFD91B02878D008AF145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341DAFD81B02878D008AF145 /* BackchannelSDK.app */,
+				341DAFF41B02878D008AF145 /* BackchannelSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		341DAFDA1B02878D008AF145 /* BackchannelSDK */ = {
+			isa = PBXGroup;
+			children = (
+				341DAFDF1B02878D008AF145 /* AppDelegate.h */,
+				341DAFE01B02878D008AF145 /* AppDelegate.m */,
+				1A62D0E71B501AE600FFD227 /* BCRootViewController.h */,
+				1A62D0E81B501AE600FFD227 /* BCRootViewController.m */,
+				349C267A1B028BB400A5D7EB /* Backchannel */,
+				341DAFDB1B02878D008AF145 /* Supporting Files */,
+			);
+			path = BackchannelSDK;
+			sourceTree = "<group>";
+		};
+		341DAFDB1B02878D008AF145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				341DAFDC1B02878D008AF145 /* Info.plist */,
+				341DAFDD1B02878D008AF145 /* main.m */,
+				1A1834FD1B952515008DF301 /* APIKey.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		341DAFF71B02878D008AF145 /* BackchannelSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				341DAFFA1B02878D008AF145 /* BackchannelSDKTests.m */,
+				341DAFF81B02878D008AF145 /* Supporting Files */,
+			);
+			path = BackchannelSDKTests;
+			sourceTree = "<group>";
+		};
+		341DAFF81B02878D008AF145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				341DAFF91B02878D008AF145 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		346E35E51BDB99C300C90359 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				346E35E61BDB99C300C90359 /* Images.xcassets */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		346E35E71BDB99C300C90359 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				346E35E81BDB99C300C90359 /* Attachment Display */,
+				346E35ED1BDB99C300C90359 /* Authentication */,
+				346E36201BDB99C300C90359 /* Backchannel.h */,
+				346E36211BDB99C300C90359 /* Backchannel.m */,
+				346E36221BDB99C300C90359 /* BAKColor.h */,
+				346E36231BDB99C300C90359 /* BAKColor.m */,
+				346E36241BDB99C300C90359 /* BAKErrorPresenter.h */,
+				346E36251BDB99C300C90359 /* BAKErrorPresenter.m */,
+				346E36261BDB99C300C90359 /* BAKMessagesCoordinator.h */,
+				346E36271BDB99C300C90359 /* BAKMessagesCoordinator.m */,
+				346E36281BDB99C300C90359 /* BAKUser.h */,
+				346E36291BDB99C300C90359 /* BAKUser.m */,
+				346E362A1BDB99C300C90359 /* Channel List */,
+				346E36391BDB99C300C90359 /* Create Message */,
+				346E365C1BDB99C300C90359 /* Edit Profile */,
+				346E36631BDB99C300C90359 /* Forms */,
+				346E36681BDB99C300C90359 /* Helpers */,
+				346E366D1BDB99C300C90359 /* Image Chooser */,
+				346E36781BDB99C300C90359 /* Message List */,
+				346E368B1BDB99C300C90359 /* Networking */,
+				346E369C1BDB99C300C90359 /* Screenshot Detection */,
+				346E36A31BDB99C300C90359 /* Table View */,
+				346E36B41BDB99C300C90359 /* Thread List */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		346E35E81BDB99C300C90359 /* Attachment Display */ = {
+			isa = PBXGroup;
+			children = (
+				346E35E91BDB99C300C90359 /* BAKAttachmentView.h */,
+				346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */,
+				346E35EB1BDB99C300C90359 /* BAKAttachmentViewController.h */,
+				346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */,
+			);
+			path = "Attachment Display";
+			sourceTree = "<group>";
+		};
+		346E35ED1BDB99C300C90359 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				346E35EE1BDB99C300C90359 /* Authentication */,
+				346E36041BDB99C300C90359 /* BAKAuthenticationButton.h */,
+				346E36051BDB99C300C90359 /* BAKAuthenticationButton.m */,
+				346E36061BDB99C300C90359 /* BAKAuthenticationCoordinator.h */,
+				346E36071BDB99C300C90359 /* BAKAuthenticationCoordinator.m */,
+				346E36081BDB99C300C90359 /* BAKCreateProfileCoordinator.h */,
+				346E36091BDB99C300C90359 /* BAKCreateProfileCoordinator.m */,
+				346E360A1BDB99C300C90359 /* BAKKeychain.h */,
+				346E360B1BDB99C300C90359 /* BAKKeychain.m */,
+				346E360C1BDB99C300C90359 /* BAKSession.h */,
+				346E360D1BDB99C300C90359 /* BAKSession.m */,
+				346E360E1BDB99C300C90359 /* Edit Profile */,
+				346E36191BDB99C300C90359 /* First Run */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		346E35EE1BDB99C300C90359 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				346E35EF1BDB99C300C90359 /* BAKAuthenticationData.h */,
+				346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */,
+				346E35F11BDB99C300C90359 /* BAKAuthenticationForm.h */,
+				346E35F21BDB99C300C90359 /* BAKAuthenticationForm.m */,
+				346E35F31BDB99C300C90359 /* BAKAuthenticationFormLayout.h */,
+				346E35F41BDB99C300C90359 /* BAKAuthenticationFormLayout.m */,
+				346E35F51BDB99C300C90359 /* BAKAuthenticationViewController.h */,
+				346E35F61BDB99C300C90359 /* BAKAuthenticationViewController.m */,
+				346E35F71BDB99C300C90359 /* BAKCreateAccountRequest.h */,
+				346E35F81BDB99C300C90359 /* BAKCreateAccountRequest.m */,
+				346E35F91BDB99C300C90359 /* BAKLogoutRequest.h */,
+				346E35FA1BDB99C300C90359 /* BAKLogoutRequest.m */,
+				346E35FB1BDB99C300C90359 /* BAKSignInRequest.h */,
+				346E35FC1BDB99C300C90359 /* BAKSignInRequest.m */,
+				346E35FD1BDB99C300C90359 /* Forgot Password */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		346E35FD1BDB99C300C90359 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				346E35FE1BDB99C300C90359 /* BAKForgotPasswordRequest.h */,
+				346E35FF1BDB99C300C90359 /* BAKForgotPasswordRequest.m */,
+				346E36001BDB99C300C90359 /* BAKForgotPasswordView.h */,
+				346E36011BDB99C300C90359 /* BAKForgotPasswordView.m */,
+				346E36021BDB99C300C90359 /* BAKForgotPasswordViewController.h */,
+				346E36031BDB99C300C90359 /* BAKForgotPasswordViewController.m */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		346E360E1BDB99C300C90359 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				346E360F1BDB99C300C90359 /* BAKProfile.h */,
+				346E36101BDB99C300C90359 /* BAKProfile.m */,
+				346E36111BDB99C300C90359 /* BAKProfileFormView.h */,
+				346E36121BDB99C300C90359 /* BAKProfileFormView.m */,
+				346E36131BDB99C300C90359 /* BAKProfileFormViewController.h */,
+				346E36141BDB99C300C90359 /* BAKProfileFormViewController.m */,
+				346E36151BDB99C300C90359 /* BAKProfileLayout.h */,
+				346E36161BDB99C300C90359 /* BAKProfileLayout.m */,
+				346E36171BDB99C300C90359 /* BAKUpdateProfileRequest.h */,
+				346E36181BDB99C300C90359 /* BAKUpdateProfileRequest.m */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		346E36191BDB99C300C90359 /* First Run */ = {
+			isa = PBXGroup;
+			children = (
+				346E361A1BDB99C300C90359 /* BAKFirstRunLayout.h */,
+				346E361B1BDB99C300C90359 /* BAKFirstRunLayout.m */,
+				346E361C1BDB99C300C90359 /* BAKFirstRunView.h */,
+				346E361D1BDB99C300C90359 /* BAKFirstRunView.m */,
+				346E361E1BDB99C300C90359 /* BAKFirstRunViewController.h */,
+				346E361F1BDB99C300C90359 /* BAKFirstRunViewController.m */,
+			);
+			path = "First Run";
+			sourceTree = "<group>";
+		};
+		346E362A1BDB99C300C90359 /* Channel List */ = {
+			isa = PBXGroup;
+			children = (
+				346E362B1BDB99C300C90359 /* BAKAppData.h */,
+				346E362C1BDB99C300C90359 /* BAKAppData.m */,
+				346E362D1BDB99C300C90359 /* BAKChannel.h */,
+				346E362E1BDB99C300C90359 /* BAKChannel.m */,
+				346E362F1BDB99C300C90359 /* BAKChannelCell.h */,
+				346E36301BDB99C300C90359 /* BAKChannelCell.m */,
+				346E36311BDB99C300C90359 /* BAKChannelHeaderView.h */,
+				346E36321BDB99C300C90359 /* BAKChannelHeaderView.m */,
+				346E36331BDB99C300C90359 /* BAKChannelLayout.h */,
+				346E36341BDB99C300C90359 /* BAKChannelLayout.m */,
+				346E36351BDB99C300C90359 /* BAKChannelListViewController.h */,
+				346E36361BDB99C300C90359 /* BAKChannelListViewController.m */,
+				346E36371BDB99C300C90359 /* BAKChannelsRequest.h */,
+				346E36381BDB99C300C90359 /* BAKChannelsRequest.m */,
+			);
+			path = "Channel List";
+			sourceTree = "<group>";
+		};
+		346E36391BDB99C300C90359 /* Create Message */ = {
+			isa = PBXGroup;
+			children = (
+				346E363A1BDB99C300C90359 /* Attachments */,
+				346E36451BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.h */,
+				346E36461BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m */,
+				346E36471BDB99C300C90359 /* BAKCreateMessageCoordinator.h */,
+				346E36481BDB99C300C90359 /* BAKCreateMessageCoordinator.m */,
+				346E36491BDB99C300C90359 /* BAKCreateMessageRequest.h */,
+				346E364A1BDB99C300C90359 /* BAKCreateMessageRequest.m */,
+				346E364B1BDB99C300C90359 /* BAKCreateThreadRequest.h */,
+				346E364C1BDB99C300C90359 /* BAKCreateThreadRequest.m */,
+				346E364D1BDB99C300C90359 /* BAKMessageCreator.h */,
+				346E364E1BDB99C300C90359 /* BAKMessageCreator.m */,
+				346E364F1BDB99C300C90359 /* BAKMessageMetadata.h */,
+				346E36501BDB99C300C90359 /* BAKMessageMetadata.m */,
+				346E36511BDB99C300C90359 /* Message Form */,
+			);
+			path = "Create Message";
+			sourceTree = "<group>";
+		};
+		346E363A1BDB99C300C90359 /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				346E363B1BDB99C300C90359 /* BAKAttachmentButtonCell.h */,
+				346E363C1BDB99C300C90359 /* BAKAttachmentButtonCell.m */,
+				346E363D1BDB99C300C90359 /* BAKAttachmentCell.h */,
+				346E363E1BDB99C300C90359 /* BAKAttachmentCell.m */,
+				346E363F1BDB99C300C90359 /* BAKAttachmentContainer.h */,
+				346E36401BDB99C300C90359 /* BAKAttachmentContainer.m */,
+				346E36411BDB99C300C90359 /* BAKAttachmentsDataSource.h */,
+				346E36421BDB99C300C90359 /* BAKAttachmentsDataSource.m */,
+				346E36431BDB99C300C90359 /* BAKAttachmentsViewController.h */,
+				346E36441BDB99C300C90359 /* BAKAttachmentsViewController.m */,
+			);
+			path = Attachments;
+			sourceTree = "<group>";
+		};
+		346E36511BDB99C300C90359 /* Message Form */ = {
+			isa = PBXGroup;
+			children = (
+				346E36521BDB99C300C90359 /* BAKChannelPickerViewController.h */,
+				346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */,
+				346E36541BDB99C300C90359 /* BAKDraft.h */,
+				346E36551BDB99C300C90359 /* BAKDraft.m */,
+				346E36561BDB99C300C90359 /* BAKMessageFormLayout.h */,
+				346E36571BDB99C300C90359 /* BAKMessageFormLayout.m */,
+				346E36581BDB99C300C90359 /* BAKMessageFormView.h */,
+				346E36591BDB99C300C90359 /* BAKMessageFormView.m */,
+				346E365A1BDB99C300C90359 /* BAKMessageFormViewController.h */,
+				346E365B1BDB99C300C90359 /* BAKMessageFormViewController.m */,
+			);
+			path = "Message Form";
+			sourceTree = "<group>";
+		};
+		346E365C1BDB99C300C90359 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				346E365D1BDB99C300C90359 /* BAKCurrentSessionRequest.h */,
+				346E365E1BDB99C300C90359 /* BAKCurrentSessionRequest.m */,
+				346E365F1BDB99C300C90359 /* BAKCurrentUserStore.h */,
+				346E36601BDB99C300C90359 /* BAKCurrentUserStore.m */,
+				346E36611BDB99C300C90359 /* BAKEditProfileCoordinator.h */,
+				346E36621BDB99C300C90359 /* BAKEditProfileCoordinator.m */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		346E36631BDB99C300C90359 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				346E36641BDB99C300C90359 /* BAKFormField.h */,
+				346E36651BDB99C300C90359 /* BAKFormField.m */,
+				346E36661BDB99C300C90359 /* BAKFormGroup.h */,
+				346E36671BDB99C300C90359 /* BAKFormGroup.m */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		346E36681BDB99C300C90359 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				346E36691BDB99C300C90359 /* BAKGeometry.h */,
+				346E366A1BDB99C300C90359 /* BAKGeometry.m */,
+				346E366B1BDB99C300C90359 /* BAKMappedArray.h */,
+				346E366C1BDB99C300C90359 /* BAKMappedArray.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		346E366D1BDB99C300C90359 /* Image Chooser */ = {
+			isa = PBXGroup;
+			children = (
+				346E366E1BDB99C300C90359 /* BAKAttachment.h */,
+				346E366F1BDB99C300C90359 /* BAKAttachment.m */,
+				346E36701BDB99C300C90359 /* BAKAttachmentUploader.h */,
+				346E36711BDB99C300C90359 /* BAKAttachmentUploader.m */,
+				346E36721BDB99C300C90359 /* BAKChooseImageCoordinator.h */,
+				346E36731BDB99C300C90359 /* BAKChooseImageCoordinator.m */,
+				346E36741BDB99C300C90359 /* BAKMultipartRequestBuilder.h */,
+				346E36751BDB99C300C90359 /* BAKMultipartRequestBuilder.m */,
+				346E36761BDB99C300C90359 /* BAKUploadAttachmentRequest.h */,
+				346E36771BDB99C300C90359 /* BAKUploadAttachmentRequest.m */,
+			);
+			path = "Image Chooser";
+			sourceTree = "<group>";
+		};
+		346E36781BDB99C300C90359 /* Message List */ = {
+			isa = PBXGroup;
+			children = (
+				346E36791BDB99C300C90359 /* BAKMessage.h */,
+				346E367A1BDB99C300C90359 /* BAKMessage.m */,
+				346E367B1BDB99C300C90359 /* BAKMessageCell.h */,
+				346E367C1BDB99C300C90359 /* BAKMessageCell.m */,
+				346E367D1BDB99C300C90359 /* BAKMessageLayout.h */,
+				346E367E1BDB99C300C90359 /* BAKMessageLayout.m */,
+				346E367F1BDB99C300C90359 /* BAKMessageListViewController.h */,
+				346E36801BDB99C300C90359 /* BAKMessageListViewController.m */,
+				346E36811BDB99C300C90359 /* BAKMessagesRequest.h */,
+				346E36821BDB99C300C90359 /* BAKMessagesRequest.m */,
+				346E36831BDB99C300C90359 /* BAKMessageView.h */,
+				346E36841BDB99C300C90359 /* BAKMessageView.m */,
+				346E36851BDB99C300C90359 /* BAKMessageViewController.h */,
+				346E36861BDB99C300C90359 /* BAKMessageViewController.m */,
+				346E36871BDB99C300C90359 /* BAKShortDate.h */,
+				346E36881BDB99C300C90359 /* BAKShortDate.m */,
+				346E36891BDB99C300C90359 /* BAKViewControllerRecycler.h */,
+				346E368A1BDB99C300C90359 /* BAKViewControllerRecycler.m */,
+				34BDC3851BDCF65C00DDF345 /* BAKDeleteMessageRequest.h */,
+				34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */,
+			);
+			path = "Message List";
+			sourceTree = "<group>";
+		};
+		346E368B1BDB99C300C90359 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				346E368C1BDB99C300C90359 /* BAKLoadableView.h */,
+				346E368D1BDB99C300C90359 /* BAKLoadingView.h */,
+				346E368E1BDB99C300C90359 /* BAKLoadingView.m */,
+				346E368F1BDB99C300C90359 /* BAKPaginatableRequest.h */,
+				346E36901BDB99C300C90359 /* BAKPaginatableRequest.m */,
+				346E36911BDB99C300C90359 /* BAKRemoteConfiguration.h */,
+				346E36921BDB99C300C90359 /* BAKRemoteConfiguration.m */,
+				346E36931BDB99C300C90359 /* BAKRequestBuilder.h */,
+				346E36941BDB99C300C90359 /* BAKRequestBuilder.m */,
+				346E36951BDB99C300C90359 /* BAKRequestTemplate.h */,
+				346E36961BDB99C300C90359 /* BAKResponseHandler.h */,
+				346E36971BDB99C300C90359 /* BAKResponseHandler.m */,
+				346E36981BDB99C300C90359 /* BAKSafeRequestTemplate.h */,
+				346E36991BDB99C300C90359 /* BAKSafeRequestTemplate.m */,
+				346E369A1BDB99C300C90359 /* BAKSendableRequest.h */,
+				346E369B1BDB99C300C90359 /* BAKSendableRequest.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		346E369C1BDB99C300C90359 /* Screenshot Detection */ = {
+			isa = PBXGroup;
+			children = (
+				346E369D1BDB99C300C90359 /* BAKAssetFetcher.h */,
+				346E369E1BDB99C300C90359 /* BAKAssetFetcher.m */,
+				346E369F1BDB99C300C90359 /* BAKChannelsStore.h */,
+				346E36A01BDB99C300C90359 /* BAKChannelsStore.m */,
+				346E36A11BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.h */,
+				346E36A21BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m */,
+			);
+			path = "Screenshot Detection";
+			sourceTree = "<group>";
+		};
+		346E36A31BDB99C300C90359 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				346E36A41BDB99C300C90359 /* BAKCache.h */,
+				346E36A51BDB99C300C90359 /* BAKCache.m */,
+				346E36A61BDB99C300C90359 /* BAKLoadingCell.h */,
+				346E36A71BDB99C300C90359 /* BAKLoadingCell.m */,
+				346E36A81BDB99C300C90359 /* BAKPaginatedFetcher.h */,
+				346E36A91BDB99C300C90359 /* BAKPaginatedFetcher.m */,
+				346E36AA1BDB99C300C90359 /* BAKRemoteDataSource.h */,
+				346E36AB1BDB99C300C90359 /* BAKRemoteDataSource.m */,
+				346E36AC1BDB99C300C90359 /* BAKSection.h */,
+				346E36AD1BDB99C300C90359 /* BAKSection.m */,
+				346E36AE1BDB99C300C90359 /* BAKTableData.h */,
+				346E36AF1BDB99C300C90359 /* BAKTableData.m */,
+				346E36B01BDB99C300C90359 /* BAKTableTopSeparator.h */,
+				346E36B11BDB99C300C90359 /* BAKTableTopSeparator.m */,
+				346E36B21BDB99C300C90359 /* BAKTableViewController.h */,
+				346E36B31BDB99C300C90359 /* BAKTableViewController.m */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		346E36B41BDB99C300C90359 /* Thread List */ = {
+			isa = PBXGroup;
+			children = (
+				346E36B51BDB99C300C90359 /* BAKThread.h */,
+				346E36B61BDB99C300C90359 /* BAKThread.m */,
+				346E36B71BDB99C300C90359 /* BAKThreadCell.h */,
+				346E36B81BDB99C300C90359 /* BAKThreadCell.m */,
+				346E36B91BDB99C300C90359 /* BAKThreadLayout.h */,
+				346E36BA1BDB99C300C90359 /* BAKThreadLayout.m */,
+				346E36BB1BDB99C300C90359 /* BAKThreadListViewController.h */,
+				346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */,
+				346E36BD1BDB99C300C90359 /* BAKThreadsRequest.h */,
+				346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */,
+			);
+			path = "Thread List";
+			sourceTree = "<group>";
+		};
+		349C267A1B028BB400A5D7EB /* Backchannel */ = {
+			isa = PBXGroup;
+			children = (
+				346E35E51BDB99C300C90359 /* Resources */,
+				346E35E71BDB99C300C90359 /* Source */,
+			);
+			path = Backchannel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		341DAFD71B02878D008AF145 /* BackchannelSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341DAFFE1B02878D008AF145 /* Build configuration list for PBXNativeTarget "BackchannelSDK" */;
+			buildPhases = (
+				341DAFD41B02878D008AF145 /* Sources */,
+				341DAFD51B02878D008AF145 /* Frameworks */,
+				341DAFD61B02878D008AF145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackchannelSDK;
+			productName = BackchannelSDK;
+			productReference = 341DAFD81B02878D008AF145 /* BackchannelSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		341DAFF31B02878D008AF145 /* BackchannelSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341DB0011B02878D008AF145 /* Build configuration list for PBXNativeTarget "BackchannelSDKTests" */;
+			buildPhases = (
+				341DAFF01B02878D008AF145 /* Sources */,
+				341DAFF11B02878D008AF145 /* Frameworks */,
+				341DAFF21B02878D008AF145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341DAFF61B02878D008AF145 /* PBXTargetDependency */,
+			);
+			name = BackchannelSDKTests;
+			productName = BackchannelSDKTests;
+			productReference = 341DAFF41B02878D008AF145 /* BackchannelSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		341DAFD01B02878D008AF145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Backchannel;
+				TargetAttributes = {
+					341DAFD71B02878D008AF145 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = JE94AGGZAL;
+					};
+					341DAFF31B02878D008AF145 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 341DAFD71B02878D008AF145;
+					};
+				};
+			};
+			buildConfigurationList = 341DAFD31B02878D008AF145 /* Build configuration list for PBXProject "BackchannelSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 341DAFCF1B02878D008AF145;
+			productRefGroup = 341DAFD91B02878D008AF145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341DAFD71B02878D008AF145 /* BackchannelSDK */,
+				341DAFF31B02878D008AF145 /* BackchannelSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		341DAFD61B02878D008AF145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1834FE1B952515008DF301 /* APIKey.plist in Resources */,
+				346E36BF1BDB99C300C90359 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		341DAFF21B02878D008AF145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341DAFD41B02878D008AF145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346E36FF1BDB99C300C90359 /* BAKMultipartRequestBuilder.m in Sources */,
+				346E36CD1BDB99C300C90359 /* BAKAuthenticationCoordinator.m in Sources */,
+				346E36FC1BDB99C300C90359 /* BAKAttachment.m in Sources */,
+				346E36C91BDB99C300C90359 /* BAKForgotPasswordRequest.m in Sources */,
+				346E37101BDB99C300C90359 /* BAKSendableRequest.m in Sources */,
+				346E371A1BDB99C300C90359 /* BAKTableTopSeparator.m in Sources */,
+				346E370B1BDB99C300C90359 /* BAKPaginatableRequest.m in Sources */,
+				346E36F31BDB99C300C90359 /* BAKMessageFormView.m in Sources */,
+				346E36E81BDB99C300C90359 /* BAKAttachmentsDataSource.m in Sources */,
+				346E36DE1BDB99C300C90359 /* BAKAppData.m in Sources */,
+				346E370E1BDB99C300C90359 /* BAKResponseHandler.m in Sources */,
+				346E36F21BDB99C300C90359 /* BAKMessageFormLayout.m in Sources */,
+				346E36E61BDB99C300C90359 /* BAKAttachmentCell.m in Sources */,
+				346E36EB1BDB99C300C90359 /* BAKCreateMessageCoordinator.m in Sources */,
+				346E36CA1BDB99C300C90359 /* BAKForgotPasswordView.m in Sources */,
+				346E36D91BDB99C300C90359 /* Backchannel.m in Sources */,
+				346E36CB1BDB99C300C90359 /* BAKForgotPasswordViewController.m in Sources */,
+				346E37161BDB99C300C90359 /* BAKPaginatedFetcher.m in Sources */,
+				346E37011BDB99C300C90359 /* BAKMessage.m in Sources */,
+				346E36EF1BDB99C300C90359 /* BAKMessageMetadata.m in Sources */,
+				346E36F01BDB99C300C90359 /* BAKChannelPickerViewController.m in Sources */,
+				346E36F51BDB99C300C90359 /* BAKCurrentSessionRequest.m in Sources */,
+				346E36E01BDB99C300C90359 /* BAKChannelCell.m in Sources */,
+				346E370A1BDB99C300C90359 /* BAKLoadingView.m in Sources */,
+				346E36E51BDB99C300C90359 /* BAKAttachmentButtonCell.m in Sources */,
+				346E36FD1BDB99C300C90359 /* BAKAttachmentUploader.m in Sources */,
+				346E36C41BDB99C300C90359 /* BAKAuthenticationFormLayout.m in Sources */,
+				346E36E21BDB99C300C90359 /* BAKChannelLayout.m in Sources */,
+				346E36EE1BDB99C300C90359 /* BAKMessageCreator.m in Sources */,
+				346E37171BDB99C300C90359 /* BAKRemoteDataSource.m in Sources */,
+				346E37151BDB99C300C90359 /* BAKLoadingCell.m in Sources */,
+				346E36D61BDB99C300C90359 /* BAKFirstRunLayout.m in Sources */,
+				346E37021BDB99C300C90359 /* BAKMessageCell.m in Sources */,
+				346E36D21BDB99C300C90359 /* BAKProfileFormView.m in Sources */,
+				346E37121BDB99C300C90359 /* BAKChannelsStore.m in Sources */,
+				346E36F71BDB99C300C90359 /* BAKEditProfileCoordinator.m in Sources */,
+				346E37031BDB99C300C90359 /* BAKMessageLayout.m in Sources */,
+				346E36CF1BDB99C300C90359 /* BAKKeychain.m in Sources */,
+				346E36F11BDB99C300C90359 /* BAKDraft.m in Sources */,
+				346E36FB1BDB99C300C90359 /* BAKMappedArray.m in Sources */,
+				346E37041BDB99C300C90359 /* BAKMessageListViewController.m in Sources */,
+				346E36D81BDB99C300C90359 /* BAKFirstRunViewController.m in Sources */,
+				346E36FE1BDB99C300C90359 /* BAKChooseImageCoordinator.m in Sources */,
+				346E36D11BDB99C300C90359 /* BAKProfile.m in Sources */,
+				346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */,
+				346E36CE1BDB99C300C90359 /* BAKCreateProfileCoordinator.m in Sources */,
+				346E36C51BDB99C300C90359 /* BAKAuthenticationViewController.m in Sources */,
+				346E371E1BDB99C300C90359 /* BAKThreadLayout.m in Sources */,
+				346E36C01BDB99C300C90359 /* BAKAttachmentView.m in Sources */,
+				346E37071BDB99C300C90359 /* BAKMessageViewController.m in Sources */,
+				346E36DD1BDB99C300C90359 /* BAKUser.m in Sources */,
+				346E36E41BDB99C300C90359 /* BAKChannelsRequest.m in Sources */,
+				346E36C11BDB99C300C90359 /* BAKAttachmentViewController.m in Sources */,
+				346E36DB1BDB99C300C90359 /* BAKErrorPresenter.m in Sources */,
+				346E36C21BDB99C300C90359 /* BAKAuthenticationData.m in Sources */,
+				346E37091BDB99C300C90359 /* BAKViewControllerRecycler.m in Sources */,
+				341DAFE11B02878D008AF145 /* AppDelegate.m in Sources */,
+				346E36C71BDB99C300C90359 /* BAKLogoutRequest.m in Sources */,
+				34BDC3871BDCF65C00DDF345 /* BAKDeleteMessageRequest.m in Sources */,
+				1A62D0E91B501AE600FFD227 /* BCRootViewController.m in Sources */,
+				346E36DF1BDB99C300C90359 /* BAKChannel.m in Sources */,
+				346E37191BDB99C300C90359 /* BAKTableData.m in Sources */,
+				346E37111BDB99C300C90359 /* BAKAssetFetcher.m in Sources */,
+				346E37061BDB99C300C90359 /* BAKMessageView.m in Sources */,
+				346E37131BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m in Sources */,
+				346E36EA1BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m in Sources */,
+				346E370D1BDB99C300C90359 /* BAKRequestBuilder.m in Sources */,
+				346E36C81BDB99C300C90359 /* BAKSignInRequest.m in Sources */,
+				346E36E91BDB99C300C90359 /* BAKAttachmentsViewController.m in Sources */,
+				346E36D71BDB99C300C90359 /* BAKFirstRunView.m in Sources */,
+				346E37051BDB99C300C90359 /* BAKMessagesRequest.m in Sources */,
+				346E36F61BDB99C300C90359 /* BAKCurrentUserStore.m in Sources */,
+				346E37001BDB99C300C90359 /* BAKUploadAttachmentRequest.m in Sources */,
+				346E36C31BDB99C300C90359 /* BAKAuthenticationForm.m in Sources */,
+				346E371B1BDB99C300C90359 /* BAKTableViewController.m in Sources */,
+				346E37081BDB99C300C90359 /* BAKShortDate.m in Sources */,
+				346E371F1BDB99C300C90359 /* BAKThreadListViewController.m in Sources */,
+				346E36D41BDB99C300C90359 /* BAKProfileLayout.m in Sources */,
+				346E36EC1BDB99C300C90359 /* BAKCreateMessageRequest.m in Sources */,
+				346E36D51BDB99C300C90359 /* BAKUpdateProfileRequest.m in Sources */,
+				346E371C1BDB99C300C90359 /* BAKThread.m in Sources */,
+				346E371D1BDB99C300C90359 /* BAKThreadCell.m in Sources */,
+				346E36C61BDB99C300C90359 /* BAKCreateAccountRequest.m in Sources */,
+				346E36D31BDB99C300C90359 /* BAKProfileFormViewController.m in Sources */,
+				346E36ED1BDB99C300C90359 /* BAKCreateThreadRequest.m in Sources */,
+				346E36F91BDB99C300C90359 /* BAKFormGroup.m in Sources */,
+				346E36F41BDB99C300C90359 /* BAKMessageFormViewController.m in Sources */,
+				346E37181BDB99C300C90359 /* BAKSection.m in Sources */,
+				346E370C1BDB99C300C90359 /* BAKRemoteConfiguration.m in Sources */,
+				346E370F1BDB99C300C90359 /* BAKSafeRequestTemplate.m in Sources */,
+				346E36F81BDB99C300C90359 /* BAKFormField.m in Sources */,
+				346E36D01BDB99C300C90359 /* BAKSession.m in Sources */,
+				346E37141BDB99C300C90359 /* BAKCache.m in Sources */,
+				346E36CC1BDB99C300C90359 /* BAKAuthenticationButton.m in Sources */,
+				346E36E11BDB99C300C90359 /* BAKChannelHeaderView.m in Sources */,
+				346E36E71BDB99C300C90359 /* BAKAttachmentContainer.m in Sources */,
+				346E36E31BDB99C300C90359 /* BAKChannelListViewController.m in Sources */,
+				346E36DC1BDB99C300C90359 /* BAKMessagesCoordinator.m in Sources */,
+				346E36DA1BDB99C300C90359 /* BAKColor.m in Sources */,
+				346E36FA1BDB99C300C90359 /* BAKGeometry.m in Sources */,
+				341DAFDE1B02878D008AF145 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		341DAFF01B02878D008AF145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341DAFFB1B02878D008AF145 /* BackchannelSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		341DAFF61B02878D008AF145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 341DAFD71B02878D008AF145 /* BackchannelSDK */;
+			targetProxy = 341DAFF51B02878D008AF145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		341DAFFC1B02878D008AF145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		341DAFFD1B02878D008AF145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		341DAFFF1B02878D008AF145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = BackchannelAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "BackchannelSDK/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		341DB0001B02878D008AF145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = BackchannelAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "BackchannelSDK/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		341DB0021B02878D008AF145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BackchannelSDKTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackchannelSDK.app/BackchannelSDK";
+			};
+			name = Debug;
+		};
+		341DB0031B02878D008AF145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BackchannelSDKTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackchannelSDK.app/BackchannelSDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341DAFD31B02878D008AF145 /* Build configuration list for PBXProject "BackchannelSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341DAFFC1B02878D008AF145 /* Debug */,
+				341DAFFD1B02878D008AF145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341DAFFE1B02878D008AF145 /* Build configuration list for PBXNativeTarget "BackchannelSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341DAFFF1B02878D008AF145 /* Debug */,
+				341DB0001B02878D008AF145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341DB0011B02878D008AF145 /* Build configuration list for PBXNativeTarget "BackchannelSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341DB0021B02878D008AF145 /* Debug */,
+				341DB0031B02878D008AF145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 341DAFD01B02878D008AF145 /* Project object */;
+}
