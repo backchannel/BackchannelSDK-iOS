@@ -20,8 +20,12 @@
     return self;
 }
 
+- (NSString *)method {
+    return @"POST";
+}
+
 - (NSString *)path {
-    return @"forgot_password";
+    return @"api/v1/users/reset_password";
 }
 
 - (NSDictionary *)parameters {

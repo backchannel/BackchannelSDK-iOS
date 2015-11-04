@@ -72,9 +72,11 @@
     BAKForgotPasswordRequest *request = [[BAKForgotPasswordRequest alloc] initWithEmail:email configuration:self.configuration];
     BAKSendableRequest *sendableRequest = [[BAKSendableRequest alloc] initWithRequestTemplate:request];
     [sendableRequest sendRequestWithSuccessBlock:^(id result) {
-        //send alert
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password reset email sent" message:@"Check your email for a link to reset your password." preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [forgotPasswordViewController presentViewController:alert animated:YES completion:nil];
     } failureBlock:^(NSError *error) {
-        //show error
+        [[[BAKErrorPresenter alloc] initWithError:error viewController:forgotPasswordViewController] present];
     }];
 }
 
