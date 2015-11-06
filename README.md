@@ -20,7 +20,11 @@ Backchannel is a great citizen in your app.
 
 ## Installation
 
-You can use CocoaPods to install Backchannel.
+To integrate Backchannel into your Xcode project using CocoaPods, specify it in your Podfile:
+
+	pod 'Backchannel'
+
+Then, run `pod install`.
 
 ## Usage
 
