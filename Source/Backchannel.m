@@ -91,8 +91,9 @@ static UIViewController *_rootViewController;
     [screenshotDetection start];
 }
 
-- (void)screenshotDetectionCoordinatorCompleted:(BAKScreenshotDetectionCoordinator *)coordinator {
-    [self.coordinators removeObject:coordinator];
+- (void)screenshotDetectionCoordinatorCompleted:(BAKScreenshotDetectionCoordinator *)screenshotDetectionCoordinator {
+    [screenshotDetectionCoordinator.viewController dismissViewControllerAnimated:YES completion:nil];
+    [self.coordinators removeObject:screenshotDetectionCoordinator];
 }
 
 - (NSMutableArray *)coordinators {
