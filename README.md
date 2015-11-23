@@ -34,7 +34,13 @@ The simplest way to present Backchannel is to use `Backchannel` class. Wire up a
 	    [[Backchannel setAPIKey:@"your_api_key"] presentModallyOverViewController:self];
 	}
 
-Once the API key is set, you can use the `+backchannel` class method to access Backchannel.
+or its Swift equivalent:
+
+	@IBAction func buttonTapped(sender: UIButton) {
+		Backchannel.setAPIKey("your_api_key").presentModallyOverViewController(self);
+	}
+
+Once the API key is set, you can use the `+backchannel` class method to access Backchannel. The Swift runtime removes this method, so you can access the `Backchannel` singleton by just initializing the Backchannel class with `Backchannel()`.
 
 ### Screenshot detection
 
@@ -44,12 +50,22 @@ To use Backchannel's screenshot detection features, Backchannel needs to know yo
 	[Backchannel setAPIKey:@"your_api_key" rootViewController:rootViewController];
 	//...
 
+or, in Swift:
+
+	Backchannel.setAPIKey("your_api_key", rootViewController:rootViewController);
+
 After this API key is set, you can use the `+backchannel` class method to present Backchannel:
 
 	- (IBAction)buttonTapped:(id)sender {
 	    [[Backchannel backchannel] presentModallyOverViewController:self];
 	}
-		
+
+or, in Swift:
+
+	@IBAction func buttonTapped(sender: UIButton) {
+		Backchannel().presentModallyOverViewController(self);
+	}
+
 ## Contributing
 
 Pull requests are always welcome!
