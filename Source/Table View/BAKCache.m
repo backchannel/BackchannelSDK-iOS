@@ -15,7 +15,7 @@
 
 @implementation BAKCache
 
-static BOOL _enabled = NO;
+static BOOL _enabled = YES;
 
 + (void)enable {
     _enabled = YES;
