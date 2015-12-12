@@ -23,5 +23,6 @@
 @property (nonatomic, readonly) CGRect timeStampRect;
 @property (nonatomic, readonly) CGRect messagePreviewRect;
 
+@property (nonatomic, readonly) CGFloat totalHorizontalPaddingForMessageBodyLabel;
 
 @end
