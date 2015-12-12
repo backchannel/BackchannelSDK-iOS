@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@class BAKChannelPickerViewController, BAKChannel;
+@class BAKChannelPickerController, BAKChannel;
 
 @protocol BAKChannelPickerDelegate <NSObject>
 
-- (void)channelPicker:(BAKChannelPickerViewController *)channelPicker didPickChannel:(BAKChannel *)channel;
+- (void)channelPicker:(BAKChannelPickerController *)channelPicker didPickChannel:(BAKChannel *)channel;
 
 @end
 
-@interface BAKChannelPickerViewController : UIViewController
+@interface BAKChannelPickerController : NSObject
+
+@property (nonatomic, readonly) UIView *view;
+
 
 - (instancetype)initWithChannels:(NSArray *)channels;
 

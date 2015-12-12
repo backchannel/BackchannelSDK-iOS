@@ -12,105 +12,105 @@
 		341DAFDE1B02878D008AF145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFDD1B02878D008AF145 /* main.m */; };
 		341DAFE11B02878D008AF145 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFE01B02878D008AF145 /* AppDelegate.m */; };
 		341DAFFB1B02878D008AF145 /* BackchannelSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFFA1B02878D008AF145 /* BackchannelSDKTests.m */; };
-		346E36BF1BDB99C300C90359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346E35E61BDB99C300C90359 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		346E36C01BDB99C300C90359 /* BAKAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C11BDB99C300C90359 /* BAKAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C21BDB99C300C90359 /* BAKAuthenticationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C31BDB99C300C90359 /* BAKAuthenticationForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F21BDB99C300C90359 /* BAKAuthenticationForm.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C41BDB99C300C90359 /* BAKAuthenticationFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F41BDB99C300C90359 /* BAKAuthenticationFormLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C51BDB99C300C90359 /* BAKAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F61BDB99C300C90359 /* BAKAuthenticationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C61BDB99C300C90359 /* BAKCreateAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F81BDB99C300C90359 /* BAKCreateAccountRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C71BDB99C300C90359 /* BAKLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FA1BDB99C300C90359 /* BAKLogoutRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C81BDB99C300C90359 /* BAKSignInRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FC1BDB99C300C90359 /* BAKSignInRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36C91BDB99C300C90359 /* BAKForgotPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FF1BDB99C300C90359 /* BAKForgotPasswordRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CA1BDB99C300C90359 /* BAKForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36011BDB99C300C90359 /* BAKForgotPasswordView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CB1BDB99C300C90359 /* BAKForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36031BDB99C300C90359 /* BAKForgotPasswordViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CC1BDB99C300C90359 /* BAKAuthenticationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36051BDB99C300C90359 /* BAKAuthenticationButton.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CD1BDB99C300C90359 /* BAKAuthenticationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36071BDB99C300C90359 /* BAKAuthenticationCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CE1BDB99C300C90359 /* BAKCreateProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36091BDB99C300C90359 /* BAKCreateProfileCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36CF1BDB99C300C90359 /* BAKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360B1BDB99C300C90359 /* BAKKeychain.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D01BDB99C300C90359 /* BAKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360D1BDB99C300C90359 /* BAKSession.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D11BDB99C300C90359 /* BAKProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36101BDB99C300C90359 /* BAKProfile.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D21BDB99C300C90359 /* BAKProfileFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36121BDB99C300C90359 /* BAKProfileFormView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D31BDB99C300C90359 /* BAKProfileFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36141BDB99C300C90359 /* BAKProfileFormViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D41BDB99C300C90359 /* BAKProfileLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36161BDB99C300C90359 /* BAKProfileLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D51BDB99C300C90359 /* BAKUpdateProfileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36181BDB99C300C90359 /* BAKUpdateProfileRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D61BDB99C300C90359 /* BAKFirstRunLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361B1BDB99C300C90359 /* BAKFirstRunLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D71BDB99C300C90359 /* BAKFirstRunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361D1BDB99C300C90359 /* BAKFirstRunView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D81BDB99C300C90359 /* BAKFirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361F1BDB99C300C90359 /* BAKFirstRunViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36D91BDB99C300C90359 /* Backchannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36211BDB99C300C90359 /* Backchannel.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DA1BDB99C300C90359 /* BAKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36231BDB99C300C90359 /* BAKColor.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DB1BDB99C300C90359 /* BAKErrorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36251BDB99C300C90359 /* BAKErrorPresenter.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DC1BDB99C300C90359 /* BAKMessagesCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36271BDB99C300C90359 /* BAKMessagesCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DD1BDB99C300C90359 /* BAKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36291BDB99C300C90359 /* BAKUser.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DE1BDB99C300C90359 /* BAKAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362C1BDB99C300C90359 /* BAKAppData.m */; settings = {ASSET_TAGS = (); }; };
-		346E36DF1BDB99C300C90359 /* BAKChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362E1BDB99C300C90359 /* BAKChannel.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E01BDB99C300C90359 /* BAKChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36301BDB99C300C90359 /* BAKChannelCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E11BDB99C300C90359 /* BAKChannelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36321BDB99C300C90359 /* BAKChannelHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E21BDB99C300C90359 /* BAKChannelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36341BDB99C300C90359 /* BAKChannelLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E31BDB99C300C90359 /* BAKChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36361BDB99C300C90359 /* BAKChannelListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E41BDB99C300C90359 /* BAKChannelsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36381BDB99C300C90359 /* BAKChannelsRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E51BDB99C300C90359 /* BAKAttachmentButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363C1BDB99C300C90359 /* BAKAttachmentButtonCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E61BDB99C300C90359 /* BAKAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363E1BDB99C300C90359 /* BAKAttachmentCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E71BDB99C300C90359 /* BAKAttachmentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36401BDB99C300C90359 /* BAKAttachmentContainer.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E81BDB99C300C90359 /* BAKAttachmentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36421BDB99C300C90359 /* BAKAttachmentsDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		346E36E91BDB99C300C90359 /* BAKAttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36441BDB99C300C90359 /* BAKAttachmentsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36EA1BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36461BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36EB1BDB99C300C90359 /* BAKCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36481BDB99C300C90359 /* BAKCreateMessageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36EC1BDB99C300C90359 /* BAKCreateMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364A1BDB99C300C90359 /* BAKCreateMessageRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36ED1BDB99C300C90359 /* BAKCreateThreadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364C1BDB99C300C90359 /* BAKCreateThreadRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36EE1BDB99C300C90359 /* BAKMessageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364E1BDB99C300C90359 /* BAKMessageCreator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36EF1BDB99C300C90359 /* BAKMessageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36501BDB99C300C90359 /* BAKMessageMetadata.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F01BDB99C300C90359 /* BAKChannelPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F11BDB99C300C90359 /* BAKDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36551BDB99C300C90359 /* BAKDraft.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F21BDB99C300C90359 /* BAKMessageFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36571BDB99C300C90359 /* BAKMessageFormLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F31BDB99C300C90359 /* BAKMessageFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36591BDB99C300C90359 /* BAKMessageFormView.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F41BDB99C300C90359 /* BAKMessageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365B1BDB99C300C90359 /* BAKMessageFormViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F51BDB99C300C90359 /* BAKCurrentSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365E1BDB99C300C90359 /* BAKCurrentSessionRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F61BDB99C300C90359 /* BAKCurrentUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36601BDB99C300C90359 /* BAKCurrentUserStore.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F71BDB99C300C90359 /* BAKEditProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36621BDB99C300C90359 /* BAKEditProfileCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F81BDB99C300C90359 /* BAKFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36651BDB99C300C90359 /* BAKFormField.m */; settings = {ASSET_TAGS = (); }; };
-		346E36F91BDB99C300C90359 /* BAKFormGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36671BDB99C300C90359 /* BAKFormGroup.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FA1BDB99C300C90359 /* BAKGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366A1BDB99C300C90359 /* BAKGeometry.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FB1BDB99C300C90359 /* BAKMappedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366C1BDB99C300C90359 /* BAKMappedArray.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FC1BDB99C300C90359 /* BAKAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366F1BDB99C300C90359 /* BAKAttachment.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FD1BDB99C300C90359 /* BAKAttachmentUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36711BDB99C300C90359 /* BAKAttachmentUploader.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FE1BDB99C300C90359 /* BAKChooseImageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36731BDB99C300C90359 /* BAKChooseImageCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E36FF1BDB99C300C90359 /* BAKMultipartRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36751BDB99C300C90359 /* BAKMultipartRequestBuilder.m */; settings = {ASSET_TAGS = (); }; };
-		346E37001BDB99C300C90359 /* BAKUploadAttachmentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36771BDB99C300C90359 /* BAKUploadAttachmentRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E37011BDB99C300C90359 /* BAKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367A1BDB99C300C90359 /* BAKMessage.m */; settings = {ASSET_TAGS = (); }; };
-		346E37021BDB99C300C90359 /* BAKMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367C1BDB99C300C90359 /* BAKMessageCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E37031BDB99C300C90359 /* BAKMessageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367E1BDB99C300C90359 /* BAKMessageLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E37041BDB99C300C90359 /* BAKMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36801BDB99C300C90359 /* BAKMessageListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E37051BDB99C300C90359 /* BAKMessagesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36821BDB99C300C90359 /* BAKMessagesRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E37061BDB99C300C90359 /* BAKMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36841BDB99C300C90359 /* BAKMessageView.m */; settings = {ASSET_TAGS = (); }; };
-		346E37071BDB99C300C90359 /* BAKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36861BDB99C300C90359 /* BAKMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E37081BDB99C300C90359 /* BAKShortDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36881BDB99C300C90359 /* BAKShortDate.m */; settings = {ASSET_TAGS = (); }; };
-		346E37091BDB99C300C90359 /* BAKViewControllerRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368A1BDB99C300C90359 /* BAKViewControllerRecycler.m */; settings = {ASSET_TAGS = (); }; };
-		346E370A1BDB99C300C90359 /* BAKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368E1BDB99C300C90359 /* BAKLoadingView.m */; settings = {ASSET_TAGS = (); }; };
-		346E370B1BDB99C300C90359 /* BAKPaginatableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36901BDB99C300C90359 /* BAKPaginatableRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E370C1BDB99C300C90359 /* BAKRemoteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36921BDB99C300C90359 /* BAKRemoteConfiguration.m */; settings = {ASSET_TAGS = (); }; };
-		346E370D1BDB99C300C90359 /* BAKRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36941BDB99C300C90359 /* BAKRequestBuilder.m */; settings = {ASSET_TAGS = (); }; };
-		346E370E1BDB99C300C90359 /* BAKResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36971BDB99C300C90359 /* BAKResponseHandler.m */; settings = {ASSET_TAGS = (); }; };
-		346E370F1BDB99C300C90359 /* BAKSafeRequestTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36991BDB99C300C90359 /* BAKSafeRequestTemplate.m */; settings = {ASSET_TAGS = (); }; };
-		346E37101BDB99C300C90359 /* BAKSendableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369B1BDB99C300C90359 /* BAKSendableRequest.m */; settings = {ASSET_TAGS = (); }; };
-		346E37111BDB99C300C90359 /* BAKAssetFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369E1BDB99C300C90359 /* BAKAssetFetcher.m */; settings = {ASSET_TAGS = (); }; };
-		346E37121BDB99C300C90359 /* BAKChannelsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A01BDB99C300C90359 /* BAKChannelsStore.m */; settings = {ASSET_TAGS = (); }; };
-		346E37131BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A21BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m */; settings = {ASSET_TAGS = (); }; };
-		346E37141BDB99C300C90359 /* BAKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A51BDB99C300C90359 /* BAKCache.m */; settings = {ASSET_TAGS = (); }; };
-		346E37151BDB99C300C90359 /* BAKLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A71BDB99C300C90359 /* BAKLoadingCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E37161BDB99C300C90359 /* BAKPaginatedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A91BDB99C300C90359 /* BAKPaginatedFetcher.m */; settings = {ASSET_TAGS = (); }; };
-		346E37171BDB99C300C90359 /* BAKRemoteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AB1BDB99C300C90359 /* BAKRemoteDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		346E37181BDB99C300C90359 /* BAKSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AD1BDB99C300C90359 /* BAKSection.m */; settings = {ASSET_TAGS = (); }; };
-		346E37191BDB99C300C90359 /* BAKTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AF1BDB99C300C90359 /* BAKTableData.m */; settings = {ASSET_TAGS = (); }; };
-		346E371A1BDB99C300C90359 /* BAKTableTopSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B11BDB99C300C90359 /* BAKTableTopSeparator.m */; settings = {ASSET_TAGS = (); }; };
-		346E371B1BDB99C300C90359 /* BAKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B31BDB99C300C90359 /* BAKTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E371C1BDB99C300C90359 /* BAKThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B61BDB99C300C90359 /* BAKThread.m */; settings = {ASSET_TAGS = (); }; };
-		346E371D1BDB99C300C90359 /* BAKThreadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B81BDB99C300C90359 /* BAKThreadCell.m */; settings = {ASSET_TAGS = (); }; };
-		346E371E1BDB99C300C90359 /* BAKThreadLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BA1BDB99C300C90359 /* BAKThreadLayout.m */; settings = {ASSET_TAGS = (); }; };
-		346E371F1BDB99C300C90359 /* BAKThreadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */; settings = {ASSET_TAGS = (); }; };
-		34BDC3871BDCF65C00DDF345 /* BAKDeleteMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */; settings = {ASSET_TAGS = (); }; };
+		346E36BF1BDB99C300C90359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346E35E61BDB99C300C90359 /* Images.xcassets */; };
+		346E36C01BDB99C300C90359 /* BAKAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */; };
+		346E36C11BDB99C300C90359 /* BAKAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */; };
+		346E36C21BDB99C300C90359 /* BAKAuthenticationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */; };
+		346E36C31BDB99C300C90359 /* BAKAuthenticationForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F21BDB99C300C90359 /* BAKAuthenticationForm.m */; };
+		346E36C41BDB99C300C90359 /* BAKAuthenticationFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F41BDB99C300C90359 /* BAKAuthenticationFormLayout.m */; };
+		346E36C51BDB99C300C90359 /* BAKAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F61BDB99C300C90359 /* BAKAuthenticationViewController.m */; };
+		346E36C61BDB99C300C90359 /* BAKCreateAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F81BDB99C300C90359 /* BAKCreateAccountRequest.m */; };
+		346E36C71BDB99C300C90359 /* BAKLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FA1BDB99C300C90359 /* BAKLogoutRequest.m */; };
+		346E36C81BDB99C300C90359 /* BAKSignInRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FC1BDB99C300C90359 /* BAKSignInRequest.m */; };
+		346E36C91BDB99C300C90359 /* BAKForgotPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35FF1BDB99C300C90359 /* BAKForgotPasswordRequest.m */; };
+		346E36CA1BDB99C300C90359 /* BAKForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36011BDB99C300C90359 /* BAKForgotPasswordView.m */; };
+		346E36CB1BDB99C300C90359 /* BAKForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36031BDB99C300C90359 /* BAKForgotPasswordViewController.m */; };
+		346E36CC1BDB99C300C90359 /* BAKAuthenticationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36051BDB99C300C90359 /* BAKAuthenticationButton.m */; };
+		346E36CD1BDB99C300C90359 /* BAKAuthenticationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36071BDB99C300C90359 /* BAKAuthenticationCoordinator.m */; };
+		346E36CE1BDB99C300C90359 /* BAKCreateProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36091BDB99C300C90359 /* BAKCreateProfileCoordinator.m */; };
+		346E36CF1BDB99C300C90359 /* BAKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360B1BDB99C300C90359 /* BAKKeychain.m */; };
+		346E36D01BDB99C300C90359 /* BAKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E360D1BDB99C300C90359 /* BAKSession.m */; };
+		346E36D11BDB99C300C90359 /* BAKProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36101BDB99C300C90359 /* BAKProfile.m */; };
+		346E36D21BDB99C300C90359 /* BAKProfileFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36121BDB99C300C90359 /* BAKProfileFormView.m */; };
+		346E36D31BDB99C300C90359 /* BAKProfileFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36141BDB99C300C90359 /* BAKProfileFormViewController.m */; };
+		346E36D41BDB99C300C90359 /* BAKProfileLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36161BDB99C300C90359 /* BAKProfileLayout.m */; };
+		346E36D51BDB99C300C90359 /* BAKUpdateProfileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36181BDB99C300C90359 /* BAKUpdateProfileRequest.m */; };
+		346E36D61BDB99C300C90359 /* BAKFirstRunLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361B1BDB99C300C90359 /* BAKFirstRunLayout.m */; };
+		346E36D71BDB99C300C90359 /* BAKFirstRunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361D1BDB99C300C90359 /* BAKFirstRunView.m */; };
+		346E36D81BDB99C300C90359 /* BAKFirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E361F1BDB99C300C90359 /* BAKFirstRunViewController.m */; };
+		346E36D91BDB99C300C90359 /* Backchannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36211BDB99C300C90359 /* Backchannel.m */; };
+		346E36DA1BDB99C300C90359 /* BAKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36231BDB99C300C90359 /* BAKColor.m */; };
+		346E36DB1BDB99C300C90359 /* BAKErrorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36251BDB99C300C90359 /* BAKErrorPresenter.m */; };
+		346E36DC1BDB99C300C90359 /* BAKMessagesCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36271BDB99C300C90359 /* BAKMessagesCoordinator.m */; };
+		346E36DD1BDB99C300C90359 /* BAKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36291BDB99C300C90359 /* BAKUser.m */; };
+		346E36DE1BDB99C300C90359 /* BAKAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362C1BDB99C300C90359 /* BAKAppData.m */; };
+		346E36DF1BDB99C300C90359 /* BAKChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E362E1BDB99C300C90359 /* BAKChannel.m */; };
+		346E36E01BDB99C300C90359 /* BAKChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36301BDB99C300C90359 /* BAKChannelCell.m */; };
+		346E36E11BDB99C300C90359 /* BAKChannelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36321BDB99C300C90359 /* BAKChannelHeaderView.m */; };
+		346E36E21BDB99C300C90359 /* BAKChannelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36341BDB99C300C90359 /* BAKChannelLayout.m */; };
+		346E36E31BDB99C300C90359 /* BAKChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36361BDB99C300C90359 /* BAKChannelListViewController.m */; };
+		346E36E41BDB99C300C90359 /* BAKChannelsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36381BDB99C300C90359 /* BAKChannelsRequest.m */; };
+		346E36E51BDB99C300C90359 /* BAKAttachmentButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363C1BDB99C300C90359 /* BAKAttachmentButtonCell.m */; };
+		346E36E61BDB99C300C90359 /* BAKAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E363E1BDB99C300C90359 /* BAKAttachmentCell.m */; };
+		346E36E71BDB99C300C90359 /* BAKAttachmentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36401BDB99C300C90359 /* BAKAttachmentContainer.m */; };
+		346E36E81BDB99C300C90359 /* BAKAttachmentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36421BDB99C300C90359 /* BAKAttachmentsDataSource.m */; };
+		346E36E91BDB99C300C90359 /* BAKAttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36441BDB99C300C90359 /* BAKAttachmentsViewController.m */; };
+		346E36EA1BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36461BDB99C300C90359 /* BAKAuthenticatingCreateMessageCoordinator.m */; };
+		346E36EB1BDB99C300C90359 /* BAKCreateMessageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36481BDB99C300C90359 /* BAKCreateMessageCoordinator.m */; };
+		346E36EC1BDB99C300C90359 /* BAKCreateMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364A1BDB99C300C90359 /* BAKCreateMessageRequest.m */; };
+		346E36ED1BDB99C300C90359 /* BAKCreateThreadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364C1BDB99C300C90359 /* BAKCreateThreadRequest.m */; };
+		346E36EE1BDB99C300C90359 /* BAKMessageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E364E1BDB99C300C90359 /* BAKMessageCreator.m */; };
+		346E36EF1BDB99C300C90359 /* BAKMessageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36501BDB99C300C90359 /* BAKMessageMetadata.m */; };
+		346E36F01BDB99C300C90359 /* BAKChannelPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36531BDB99C300C90359 /* BAKChannelPickerController.m */; };
+		346E36F11BDB99C300C90359 /* BAKDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36551BDB99C300C90359 /* BAKDraft.m */; };
+		346E36F21BDB99C300C90359 /* BAKMessageFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36571BDB99C300C90359 /* BAKMessageFormLayout.m */; };
+		346E36F31BDB99C300C90359 /* BAKMessageFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36591BDB99C300C90359 /* BAKMessageFormView.m */; };
+		346E36F41BDB99C300C90359 /* BAKMessageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365B1BDB99C300C90359 /* BAKMessageFormViewController.m */; };
+		346E36F51BDB99C300C90359 /* BAKCurrentSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E365E1BDB99C300C90359 /* BAKCurrentSessionRequest.m */; };
+		346E36F61BDB99C300C90359 /* BAKCurrentUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36601BDB99C300C90359 /* BAKCurrentUserStore.m */; };
+		346E36F71BDB99C300C90359 /* BAKEditProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36621BDB99C300C90359 /* BAKEditProfileCoordinator.m */; };
+		346E36F81BDB99C300C90359 /* BAKFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36651BDB99C300C90359 /* BAKFormField.m */; };
+		346E36F91BDB99C300C90359 /* BAKFormGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36671BDB99C300C90359 /* BAKFormGroup.m */; };
+		346E36FA1BDB99C300C90359 /* BAKGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366A1BDB99C300C90359 /* BAKGeometry.m */; };
+		346E36FB1BDB99C300C90359 /* BAKMappedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366C1BDB99C300C90359 /* BAKMappedArray.m */; };
+		346E36FC1BDB99C300C90359 /* BAKAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E366F1BDB99C300C90359 /* BAKAttachment.m */; };
+		346E36FD1BDB99C300C90359 /* BAKAttachmentUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36711BDB99C300C90359 /* BAKAttachmentUploader.m */; };
+		346E36FE1BDB99C300C90359 /* BAKChooseImageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36731BDB99C300C90359 /* BAKChooseImageCoordinator.m */; };
+		346E36FF1BDB99C300C90359 /* BAKMultipartRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36751BDB99C300C90359 /* BAKMultipartRequestBuilder.m */; };
+		346E37001BDB99C300C90359 /* BAKUploadAttachmentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36771BDB99C300C90359 /* BAKUploadAttachmentRequest.m */; };
+		346E37011BDB99C300C90359 /* BAKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367A1BDB99C300C90359 /* BAKMessage.m */; };
+		346E37021BDB99C300C90359 /* BAKMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367C1BDB99C300C90359 /* BAKMessageCell.m */; };
+		346E37031BDB99C300C90359 /* BAKMessageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E367E1BDB99C300C90359 /* BAKMessageLayout.m */; };
+		346E37041BDB99C300C90359 /* BAKMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36801BDB99C300C90359 /* BAKMessageListViewController.m */; };
+		346E37051BDB99C300C90359 /* BAKMessagesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36821BDB99C300C90359 /* BAKMessagesRequest.m */; };
+		346E37061BDB99C300C90359 /* BAKMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36841BDB99C300C90359 /* BAKMessageView.m */; };
+		346E37071BDB99C300C90359 /* BAKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36861BDB99C300C90359 /* BAKMessageViewController.m */; };
+		346E37081BDB99C300C90359 /* BAKShortDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36881BDB99C300C90359 /* BAKShortDate.m */; };
+		346E37091BDB99C300C90359 /* BAKViewControllerRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368A1BDB99C300C90359 /* BAKViewControllerRecycler.m */; };
+		346E370A1BDB99C300C90359 /* BAKLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E368E1BDB99C300C90359 /* BAKLoadingView.m */; };
+		346E370B1BDB99C300C90359 /* BAKPaginatableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36901BDB99C300C90359 /* BAKPaginatableRequest.m */; };
+		346E370C1BDB99C300C90359 /* BAKRemoteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36921BDB99C300C90359 /* BAKRemoteConfiguration.m */; };
+		346E370D1BDB99C300C90359 /* BAKRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36941BDB99C300C90359 /* BAKRequestBuilder.m */; };
+		346E370E1BDB99C300C90359 /* BAKResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36971BDB99C300C90359 /* BAKResponseHandler.m */; };
+		346E370F1BDB99C300C90359 /* BAKSafeRequestTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36991BDB99C300C90359 /* BAKSafeRequestTemplate.m */; };
+		346E37101BDB99C300C90359 /* BAKSendableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369B1BDB99C300C90359 /* BAKSendableRequest.m */; };
+		346E37111BDB99C300C90359 /* BAKAssetFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E369E1BDB99C300C90359 /* BAKAssetFetcher.m */; };
+		346E37121BDB99C300C90359 /* BAKChannelsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A01BDB99C300C90359 /* BAKChannelsStore.m */; };
+		346E37131BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A21BDB99C300C90359 /* BAKScreenshotDetectionCoordinator.m */; };
+		346E37141BDB99C300C90359 /* BAKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A51BDB99C300C90359 /* BAKCache.m */; };
+		346E37151BDB99C300C90359 /* BAKLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A71BDB99C300C90359 /* BAKLoadingCell.m */; };
+		346E37161BDB99C300C90359 /* BAKPaginatedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36A91BDB99C300C90359 /* BAKPaginatedFetcher.m */; };
+		346E37171BDB99C300C90359 /* BAKRemoteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AB1BDB99C300C90359 /* BAKRemoteDataSource.m */; };
+		346E37181BDB99C300C90359 /* BAKSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AD1BDB99C300C90359 /* BAKSection.m */; };
+		346E37191BDB99C300C90359 /* BAKTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36AF1BDB99C300C90359 /* BAKTableData.m */; };
+		346E371A1BDB99C300C90359 /* BAKTableTopSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B11BDB99C300C90359 /* BAKTableTopSeparator.m */; };
+		346E371B1BDB99C300C90359 /* BAKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B31BDB99C300C90359 /* BAKTableViewController.m */; };
+		346E371C1BDB99C300C90359 /* BAKThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B61BDB99C300C90359 /* BAKThread.m */; };
+		346E371D1BDB99C300C90359 /* BAKThreadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36B81BDB99C300C90359 /* BAKThreadCell.m */; };
+		346E371E1BDB99C300C90359 /* BAKThreadLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BA1BDB99C300C90359 /* BAKThreadLayout.m */; };
+		346E371F1BDB99C300C90359 /* BAKThreadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */; };
+		346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */; };
+		34BDC3871BDCF65C00DDF345 /* BAKDeleteMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,8 +232,8 @@
 		346E364E1BDB99C300C90359 /* BAKMessageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageCreator.m; sourceTree = "<group>"; };
 		346E364F1BDB99C300C90359 /* BAKMessageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageMetadata.h; sourceTree = "<group>"; };
 		346E36501BDB99C300C90359 /* BAKMessageMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKMessageMetadata.m; sourceTree = "<group>"; };
-		346E36521BDB99C300C90359 /* BAKChannelPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelPickerViewController.h; sourceTree = "<group>"; };
-		346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelPickerViewController.m; sourceTree = "<group>"; };
+		346E36521BDB99C300C90359 /* BAKChannelPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKChannelPickerController.h; sourceTree = "<group>"; };
+		346E36531BDB99C300C90359 /* BAKChannelPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKChannelPickerController.m; sourceTree = "<group>"; };
 		346E36541BDB99C300C90359 /* BAKDraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKDraft.h; sourceTree = "<group>"; };
 		346E36551BDB99C300C90359 /* BAKDraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKDraft.m; sourceTree = "<group>"; };
 		346E36561BDB99C300C90359 /* BAKMessageFormLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKMessageFormLayout.h; sourceTree = "<group>"; };
@@ -610,8 +610,8 @@
 		346E36511BDB99C300C90359 /* Message Form */ = {
 			isa = PBXGroup;
 			children = (
-				346E36521BDB99C300C90359 /* BAKChannelPickerViewController.h */,
-				346E36531BDB99C300C90359 /* BAKChannelPickerViewController.m */,
+				346E36521BDB99C300C90359 /* BAKChannelPickerController.h */,
+				346E36531BDB99C300C90359 /* BAKChannelPickerController.m */,
 				346E36541BDB99C300C90359 /* BAKDraft.h */,
 				346E36551BDB99C300C90359 /* BAKDraft.m */,
 				346E36561BDB99C300C90359 /* BAKMessageFormLayout.h */,
@@ -908,7 +908,7 @@
 				346E37161BDB99C300C90359 /* BAKPaginatedFetcher.m in Sources */,
 				346E37011BDB99C300C90359 /* BAKMessage.m in Sources */,
 				346E36EF1BDB99C300C90359 /* BAKMessageMetadata.m in Sources */,
-				346E36F01BDB99C300C90359 /* BAKChannelPickerViewController.m in Sources */,
+				346E36F01BDB99C300C90359 /* BAKChannelPickerController.m in Sources */,
 				346E36F51BDB99C300C90359 /* BAKCurrentSessionRequest.m in Sources */,
 				346E36E01BDB99C300C90359 /* BAKChannelCell.m in Sources */,
 				346E370A1BDB99C300C90359 /* BAKLoadingView.m in Sources */,

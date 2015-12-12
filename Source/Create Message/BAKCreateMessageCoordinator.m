@@ -20,7 +20,7 @@
 #import "BAKAttachmentContainer.h"
 #import "BAKAttachmentViewController.h"
 #import "BAKChannelsStore.h"
-#import "BAKChannelPickerViewController.h"
+#import "BAKChannelPickerController.h"
 
 @interface BAKCreateMessageCoordinator () <BAKMessageFormDelegate, BAKImageChooserDelegate, BAKAttachmentUploaderDelegate, BAKAttachmentViewControllerDelegate>
 
