@@ -39,7 +39,6 @@
     [self configureView];
 }
 
-
 - (void)configureView {
     self.messageView.authorLabel.text = self.message.author.displayName;
     self.messageView.messageBodyTextView.attributedText = self.message.attributedBody;
@@ -50,6 +49,7 @@
     if (avatar.imageLoaded) {
         self.messageView.avatarImageView.image = avatar.image;
     } else {
+        self.messageView.avatarImageView.image = nil;
         [avatar fetchImageWithSuccessBlock:^{
             [self configureView];
         } failureBlock:nil];
