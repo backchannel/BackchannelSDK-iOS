@@ -8,8 +8,9 @@
 
 #import "BAKAttachmentViewController.h"
 #import "BAKAttachment.h"
+#import "BAKLoadingView.h"
 
-@interface BAKAttachmentViewController () <UIScrollViewDelegate>
+@interface BAKAttachmentViewController ()
 
 @end
 
@@ -52,8 +53,10 @@
 
 - (void)loadAndShowImage {
     if (self.attachment.imageLoaded) {
+        [self.attachmentView hideLoadingView];
         self.attachmentView.attachmentImageView.image = self.attachment.image;
     } else {
+        [self.attachmentView showLoadingView];
         [self.attachment fetchImageWithSuccessBlock:^{
             [self loadAndShowImage];
         } failureBlock:^(NSError *error) {

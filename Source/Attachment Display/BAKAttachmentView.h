@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BAKLoadableView.h"
 
-@interface BAKAttachmentView : UIView
+@class BAKLoadingView;
+
+@interface BAKAttachmentView : UIView<BAKLoadableView>
 
 @property (nonatomic, readonly) UIImageView *attachmentImageView;
 @property (nonatomic, readonly) UIButton *removeButton;
