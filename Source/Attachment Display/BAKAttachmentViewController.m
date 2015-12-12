@@ -8,7 +8,6 @@
 
 #import "BAKAttachmentViewController.h"
 #import "BAKAttachment.h"
-#import "BAKLoadingView.h"
 
 @interface BAKAttachmentViewController ()
 
