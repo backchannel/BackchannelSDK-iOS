@@ -40,6 +40,8 @@
     _currentUserStore.delegate = self;
     [_currentUserStore updateFromAPI];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userAuthenticated:) name:BAKAuthenticationCoordinatorDidLogUserIn object:nil];
+    
     return self;
 }
 
@@ -162,8 +164,11 @@
 - (void)coordinatorDidAuthenticate:(BAKAuthenticationCoordinator *)coordinator {
     [coordinator.navigationController dismissViewControllerAnimated:YES completion:nil];
     [self.childCoordinators removeObject:coordinator];
-    [self.currentUserStore updateFromAPI];
+}
+
+- (void)userAuthenticated:(NSNotification *)notification {
     [self setUpRightBarButton];
+    [self.currentUserStore updateFromAPI];
 }
 
 - (void)coordinatorDidRequestDismissal:(BAKAuthenticationCoordinator *)coordinator {
@@ -176,6 +181,10 @@
         self.childCoordinators = [NSMutableArray array];
     }
     return _childCoordinators;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

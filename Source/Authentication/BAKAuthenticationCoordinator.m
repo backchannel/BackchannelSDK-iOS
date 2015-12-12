@@ -21,11 +21,12 @@
 #import "BAKForgotPasswordRequest.h"
 #import "BAKCurrentUserStore.h"
 
+NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordinatorDidLogUserIn";
+
 @interface BAKAuthenticationCoordinator () <BAKFirstRunViewControllerDelegate, BAKAuthenticationViewControllerDelegate, BAKCreateProfileDelegate, BAKForgotPasswordViewControllerDelegate>
 
 @property (nonatomic) NSMutableArray *childCoordinators;
 @property (nonatomic) BOOL requestInProgress;
-
 
 @end
 
@@ -139,6 +140,7 @@
 
 - (void)informDelegateOfSuccess {
     [self.navigationController popViewControllerAnimated:NO];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BAKAuthenticationCoordinatorDidLogUserIn object:[BAKSession currentSession]];
     if ([self.delegate respondsToSelector:@selector(coordinatorDidAuthenticate:)]) {
         [self.delegate coordinatorDidAuthenticate:self];
     }
