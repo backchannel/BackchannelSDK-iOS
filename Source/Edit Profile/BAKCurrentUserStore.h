@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class BAKUser, BAKRemoteConfiguration;
+@class BAKUser, BAKRemoteConfiguration, BAKCurrentUserStore;
+
+@protocol BAKCurrentUserStoreDelegate <NSObject>
+
+- (void)currentUserStoreFailedToValidateAuthToken:(BAKCurrentUserStore *)currentUserStore;
+
+@end
 
 @interface BAKCurrentUserStore : NSObject
 
@@ -17,6 +23,8 @@
 @property (nonatomic, readonly) BAKRemoteConfiguration *configuration;
 
 @property (nonatomic) BAKUser *currentUser;
+
+@property (nonatomic, weak) id<BAKCurrentUserStoreDelegate> delegate;
 
 - (void)updateFromAPI;
 
