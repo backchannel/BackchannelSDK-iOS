@@ -34,7 +34,7 @@
 
 - (UIActivityIndicatorView *)activityIndicator {
     if (!_activityIndicator) {
-        UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [self.contentView addSubview:activityIndicator];
         activityIndicator.hidesWhenStopped = YES;
         [activityIndicator sizeToFit];

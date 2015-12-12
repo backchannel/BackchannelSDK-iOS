@@ -39,7 +39,7 @@
 }
 
 - (BOOL)shouldShowLoadingIndicator {
-    if (self.attachment || self.error) {
+    if ((self.attachment && self.attachment.imageLoaded) || self.error) {
         return NO;
     } else {
         return YES;
