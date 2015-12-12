@@ -16,6 +16,8 @@
 + (instancetype)setAPIKey:(NSString *)APIKey;
 + (instancetype)backchannel;
 
++ (instancetype)sharedBackchannel; //A singleton getter for Swift
+
 - (void)presentModallyOverViewController:(UIViewController *)viewController;
 
 @end
