@@ -90,6 +90,8 @@
     self.timeStampLabel.frame = layout.timeStampRect;
     self.messageBodyTextView.frame = layout.messageBodyRect;
     self.attachmentsView.frame = layout.attachmentsRect;
+    
+    self.attachmentsView.hidden = !self.shouldShowAttachments;
 }
 
 @end
