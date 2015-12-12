@@ -52,6 +52,10 @@
     return viewController;
 }
 
+- (id)viewControllerAtIndexPath:(NSIndexPath *)indexPath {
+    return self.viewControllersByIndexPath[indexPath];
+}
+
 - (void)recycleViewControllerAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *viewController = self.viewControllersByIndexPath[indexPath];
     [self.viewControllersByIndexPath removeObjectForKey:indexPath];

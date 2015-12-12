@@ -17,7 +17,7 @@
 @property (nonatomic) Class viewControllerClass;
 @property (nonatomic) UIViewController *parentViewController;
 
-
+- (id)viewControllerAtIndexPath:(NSIndexPath *)indexPath;
 - (id)recycledOrNewViewController;
 - (void)recycleViewControllerAtIndexPath:(NSIndexPath *)indexPath;
 - (void)hangOnToViewController:(id)viewController atIndexPath:(NSIndexPath *)indexPath;

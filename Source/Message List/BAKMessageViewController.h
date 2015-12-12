@@ -26,4 +26,6 @@
 
 @property (nonatomic, weak) id<BAKMessageViewControllerDelegate> delegate;
 
+- (void)configureView;
+
 @end

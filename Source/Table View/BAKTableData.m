@@ -161,8 +161,8 @@ static NSString *const BAKNoResultsCellIdentifier = @"BAKNoResultsCellIdentifier
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     id object = [self.dataSource objectAtIndexPath:indexPath];
-    if ([self.delegate respondsToSelector:@selector(tableData:commitDeletionForObject:)]) {
-        [self.delegate tableData:self commitDeletionForObject:object];
+    if ([self.delegate respondsToSelector:@selector(tableData:commitDeletionForObject:atIndexPath:)]) {
+        [self.delegate tableData:self commitDeletionForObject:object atIndexPath:indexPath];
     }
 }
 
