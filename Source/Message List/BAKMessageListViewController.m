@@ -125,19 +125,29 @@ static NSString *const BAKLoadingCellIdentifier = @"BAKLoadingCellIdentifier";
     return [object canBeDeleted];
 }
 
-- (void)tableData:(BAKTableData *)tableData commitDeletionForObject:(BAKMessage *)message {
+- (void)tableData:(BAKTableData *)tableData commitDeletionForObject:(BAKMessage *)message atIndexPath:(NSIndexPath *)indexPath {
     NSString *oldMessageBody = message.body;
+    [self closeDeleteButton];
     [message setTextToDeleted];
-    [self.tableView reloadData];
+    [self configureViewControllerAtIndexPath:indexPath];
     BAKDeleteMessageRequest *deleteMessageRequest = [[BAKDeleteMessageRequest alloc] initWithMessageID:message.ID configuration:self.configuration];
     BAKSendableRequest *sendableRequest = [[BAKSendableRequest alloc] initWithRequestTemplate:deleteMessageRequest];
     [sendableRequest sendRequestWithSuccessBlock:^(id result) {
         
     } failureBlock:^(NSError *error) {
         [message updateWithBody:oldMessageBody];
-        [self.tableView reloadData];
+        [self configureViewControllerAtIndexPath:indexPath];
         [[[BAKErrorPresenter alloc] initWithError:error viewController:self] present];
     }];
+}
+
+- (void)closeDeleteButton {
+    self.tableView.editing = NO;
+}
+
+- (void)configureViewControllerAtIndexPath:(NSIndexPath *)indexPath {
+    BAKMessageViewController *viewController = [self.recycler viewControllerAtIndexPath:indexPath];
+    [viewController configureView];
 }
 
 - (void)threadWasModified:(NSNotification *)note {

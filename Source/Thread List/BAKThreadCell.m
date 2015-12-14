@@ -30,7 +30,8 @@
 }
 
 + (CGFloat)totalHorizontalPaddingForMessageBodyLabel {
-    return 44;
+    BAKThreadLayout *layout = [BAKThreadLayout new];
+    return layout.totalHorizontalPaddingForMessageBodyLabel;
 }
 
 - (UIImageView *)avatarImageView {

@@ -23,10 +23,10 @@
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 
-//    NSString *APIKeyPListPath = [[NSBundle mainBundle] pathForResource:@"APIKey" ofType:@"plist"];
-//    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:APIKeyPListPath];
+    NSString *APIKeyPListPath = [[NSBundle mainBundle] pathForResource:@"APIKey" ofType:@"plist"];
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:APIKeyPListPath];
     
-    [Backchannel setAPIKey:@"ac37fd9245f6884045c8205ac0b31bc66573411d" rootViewController:navigationController];
+    [Backchannel setAPIKey:dictionary[@"APIKey"] rootViewController:navigationController];
     
     return YES;
 }

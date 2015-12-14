@@ -31,6 +31,8 @@
         CGRectDivide(workingRect, &attachmentsRect, &workingRect, self.attachmentsHeight, CGRectMaxYEdge);
         attachmentsRect = BAKRectTrim(attachmentsRect, self.horizontalMessagePadding, CGRectMinXEdge);
         attachmentsRect = CGRectOffset(attachmentsRect, 0, 5);
+    } else {
+        attachmentsRect = CGRectMake(0, 0, 500, 100);
     }
     
     messageBodyRect = CGRectInset(workingRect, self.horizontalMessagePadding, 0);

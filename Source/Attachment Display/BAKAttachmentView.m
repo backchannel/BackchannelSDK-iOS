@@ -8,12 +8,14 @@
 
 #import "BAKAttachmentView.h"
 #import "BAKGeometry.h"
+#import "BAKLoadingView.h"
 
 @interface BAKAttachmentView () <UIScrollViewDelegate>
 
 @property (nonatomic, readwrite) UIScrollView *scrollView;
 @property (nonatomic, readwrite) UIImageView *attachmentImageView;
 @property (nonatomic, readwrite) UIButton *removeButton;
+@property (nonatomic) BAKLoadingView *loadingView;
 
 @end
 
@@ -58,6 +60,26 @@
     return _removeButton;
 }
 
+- (BAKLoadingView *)loadingView {
+    if (!_loadingView) {
+        BAKLoadingView *loadingView = [[BAKLoadingView alloc] init];
+        loadingView.hidden = YES;
+        [self addSubview:loadingView];
+        self.loadingView = loadingView;
+    }
+    return _loadingView;
+}
+
+- (void)showLoadingView {
+    self.loadingView.hidden = NO;
+    [self.loadingView startAnimating];
+}
+
+- (void)hideLoadingView {
+    self.loadingView.hidden = YES;
+    [self.loadingView stopAnimating];
+}
+
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.attachmentImageView;
 }
@@ -81,6 +103,8 @@
     removeRect = CGRectOffset(removeRect, 0, 200);
     self.removeButton.frame = removeRect;
     self.removeButton.layer.cornerRadius = removeRect.size.height/2;
+    
+    self.loadingView.center = self.center;
 }
 
 @end

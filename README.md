@@ -54,7 +54,7 @@ or, in Swift:
 
 	Backchannel.setAPIKey("your_api_key", rootViewController:rootViewController);
 
-After this API key is set, you can use the `+backchannel` class method to present Backchannel:
+After this API key is set, you can use the `+backchannel` class method (`sharedBackchannel()` in Swift) to present Backchannel:
 
 	- (IBAction)buttonTapped:(id)sender {
 	    [[Backchannel backchannel] presentModallyOverViewController:self];
@@ -63,7 +63,7 @@ After this API key is set, you can use the `+backchannel` class method to presen
 or, in Swift:
 
 	@IBAction func buttonTapped(sender: UIButton) {
-		Backchannel().presentModallyOverViewController(self);
+		Backchannel.sharedBackchannel().presentModallyOverViewController(self);
 	}
 
 ## Contributing

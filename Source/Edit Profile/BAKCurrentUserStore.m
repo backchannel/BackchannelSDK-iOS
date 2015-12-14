@@ -48,7 +48,11 @@
     BAKSendableRequest *sendableRequest = [[BAKSendableRequest alloc] initWithRequestTemplate:currentSessionRequest];
     [sendableRequest sendRequestWithSuccessBlock:^(BAKUser *result) {
         self.currentUser = result;
-    } failureBlock:nil];
+    } failureBlock:^(NSError *error) {
+        if ([self.delegate respondsToSelector:@selector(currentUserStoreFailedToValidateAuthToken:)]) {
+            [self.delegate currentUserStoreFailedToValidateAuthToken:self];
+        }
+    }];
 }
 
 @end

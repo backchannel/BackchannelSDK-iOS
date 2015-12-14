@@ -10,6 +10,8 @@
 
 @import UIKit;
 
+extern NSString *BAKAuthenticationCoordinatorDidLogUserIn;
+
 @class BAKAuthenticationCoordinator, BAKSession, BAKRemoteConfiguration;
 
 @protocol BAKAuthenticationDelegate <NSObject>

@@ -22,7 +22,7 @@
 - (CGFloat)tableData:(BAKTableData *)tableData heightForObject:(id)object atIndexPath:(NSIndexPath *)indexPath;
 - (void)tableData:(BAKTableData *)tableData willEndDisplayingObject:(id)object inCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)tableData:(BAKTableData *)tableData canDeleteObject:(id)object;
-- (void)tableData:(BAKTableData *)tableData commitDeletionForObject:(id)object;
+- (void)tableData:(BAKTableData *)tableData commitDeletionForObject:(id)object atIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

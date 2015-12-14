@@ -16,6 +16,7 @@
 
 @property (nonatomic) NSString *ID;
 @property (nonatomic) NSURL *URL;
+@property (nonatomic) NSString *type;
 
 @property (nonatomic) UIImage *image;
 

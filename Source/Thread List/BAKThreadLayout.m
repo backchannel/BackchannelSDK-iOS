@@ -37,7 +37,7 @@
 	timeStampRect = CGRectOffset(timeStampRect, 0, 1);
 	authorRect = CGRectOffset(authorRect, 2, -1);
 	
-    messagePreviewRect = BAKRectTrim(workingRect, self.messagePreviewLeftPadding + 3, CGRectMinXEdge);
+    messagePreviewRect = BAKRectTrim(workingRect, self.messagePreviewLeftPadding, CGRectMinXEdge);
     messagePreviewRect.size.height = MIN(messageHeight, workingRect.size.height);
 	messagePreviewRect = CGRectOffset(messagePreviewRect, 0, -2);
 	
@@ -86,7 +86,7 @@
 }
 
 - (CGFloat)messagePreviewLeftPadding {
-    return 44;
+    return 47;
 }
 
 - (CGFloat)chevronTopPadding {
@@ -95,6 +95,10 @@
 
 - (CGFloat)chevronLeftPadding {
     return 7;
+}
+
+- (CGFloat)totalHorizontalPaddingForMessageBodyLabel {
+    return self.leftPadding + self.rightPadding + self.messagePreviewLeftPadding;
 }
 
 @end

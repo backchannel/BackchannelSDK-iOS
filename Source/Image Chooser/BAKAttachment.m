@@ -25,11 +25,18 @@
     
     _ID = dictionary[@"ID"];
     _URL = [NSURL URLWithString:dictionary[@"full"][@"URL"]];
-    
+    _type = dictionary[@"type"];
+
     return self;
 }
 
 - (void)fetchImageWithSuccessBlock:(void (^)(void))successBlock failureBlock:(void (^)(NSError *error))failureBlock {
+    if (![self.type isEqualToString:@"image"]) {
+        if (failureBlock) {
+            failureBlock([NSError errorWithDomain:@"io.backchannel.Backchannel" code:99 userInfo:@{NSLocalizedDescriptionKey: @"Can't load non-image attachment types."}]);
+        }
+        return;
+    }
     if (!self.URL) {
         if (failureBlock) {
             failureBlock([NSError errorWithDomain:@"io.backchannel.Backchannel" code:99 userInfo:@{NSLocalizedDescriptionKey: @"Couldn't load image from a blank URL."}]);

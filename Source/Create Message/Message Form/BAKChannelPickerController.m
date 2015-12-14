@@ -6,19 +6,21 @@
 //  Copyright (c) 2015 Backchannel. All rights reserved.
 //
 
-#import "BAKChannelPickerViewController.h"
+#import "BAKChannelPickerController.h"
 #import "BAKChannel.h"
 #import "BAKColor.h"
 #import "BAKGeometry.h"
 
-@interface BAKChannelPickerViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface BAKChannelPickerController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic) UIPickerView *pickerView;
 @property (nonatomic) UIView *separatorView;
+@property (nonatomic) UIView *view;
+
 
 @end
 
-@implementation BAKChannelPickerViewController
+@implementation BAKChannelPickerController
 
 - (instancetype)initWithChannels:(NSArray *)channels {
     self = [super init];
@@ -26,8 +28,16 @@
     
     _channels = channels;
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    [self applyLayout];
+
     return self;
+}
+
+- (UIView *)view {
+    if (!_view) {
+        self.view = [[UIView alloc] init];
+    }
+    return _view;
 }
 
 - (UIView *)separatorView {
@@ -77,12 +87,15 @@
     }
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
+- (void)applyLayout {
+    self.view.frame = CGRectMake(0, 0, 200, 200);
     CGRect separatorRect = self.view.bounds;
     separatorRect.size.height = 1.0/[UIScreen mainScreen].scale;
+    self.separatorView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
+
     self.separatorView.frame = separatorRect;
     self.pickerView.frame = self.view.bounds;
+    self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 @end

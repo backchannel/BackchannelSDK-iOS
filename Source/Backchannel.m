@@ -39,6 +39,11 @@ static UIViewController *_rootViewController;
     return self._backchannel;
 }
 
++ (instancetype)sharedBackchannel {
+    NSAssert(_globalAPIKey, @"You must set your API key before calling `+backchannel`.");
+    return self._backchannel;
+}
+
 + (instancetype)_backchannel {
     static Backchannel *backchannel;
     static dispatch_once_t onceToken;

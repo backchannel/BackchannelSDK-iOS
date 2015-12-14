@@ -61,6 +61,9 @@
 }
 
 - (void)setTextToDeleted {
+    NSMutableArray *mutablePermissions = [_permissions mutableCopy];
+    [mutablePermissions removeObject:@"delete"];
+    _permissions = [mutablePermissions copy];
     return [self updateWithBody:@"[Deleted]"];
 }
 

@@ -20,7 +20,7 @@
 #import "BAKSendableRequest.h"
 #import "BAKLogoutRequest.h"
 
-@interface BAKMessagesCoordinator () <BAKAuthenticationDelegate, BAKChannelListDelegate, BAKThreadListDelegate, BAKMessageListDelegate, BAKAuthenticatingCreateMessageCoordinatorDelegate, BAKEditProfileDelegate>
+@interface BAKMessagesCoordinator () <BAKAuthenticationDelegate, BAKChannelListDelegate, BAKThreadListDelegate, BAKMessageListDelegate, BAKAuthenticatingCreateMessageCoordinatorDelegate, BAKEditProfileDelegate, BAKCurrentUserStoreDelegate>
 
 @property (nonatomic) NSMutableArray *childCoordinators;
 @property (nonatomic) BAKCurrentUserStore *currentUserStore;
@@ -37,7 +37,10 @@
     _navigationController = navigationController;
     _configuration = configuration;
     _currentUserStore = [[BAKCurrentUserStore alloc] initWithConfiguration:self.configuration];
+    _currentUserStore.delegate = self;
     [_currentUserStore updateFromAPI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userAuthenticated:) name:BAKAuthenticationCoordinatorDidLogUserIn object:nil];
     
     return self;
 }
@@ -54,6 +57,11 @@
     [self setUpRightBarButton];
 
     [self.navigationController pushViewController:channelList animated:NO];
+}
+
+- (void)currentUserStoreFailedToValidateAuthToken:(BAKCurrentUserStore *)currentUserStore {
+    [self logOutCurrentUser];
+    [self setUpRightBarButton];
 }
 
 - (void)setUpRightBarButton {
@@ -102,12 +110,16 @@
 }
 
 - (void)editProfileCoordinatorRequestLogOut:(BAKEditProfileCoordinator *)editProfileCoordinator {
+    [self logOutCurrentUser];
+    [self.childCoordinators removeObject:editProfileCoordinator];
+    [self setUpRightBarButton];
+}
+
+- (void)logOutCurrentUser {
     BAKLogoutRequest *logoutRequest = [[BAKLogoutRequest alloc] initWithConfiguration:self.configuration];
     [[[BAKSendableRequest alloc] initWithRequestTemplate:logoutRequest] sendRequestWithSuccessBlock:nil failureBlock:nil];
     [BAKCache clearAllCaches];
     [BAKSession closeSession];
-    [self.childCoordinators removeObject:editProfileCoordinator];
-    [self setUpRightBarButton];
 }
 
 - (void)showEditProfile:(id)sender {
@@ -152,8 +164,11 @@
 - (void)coordinatorDidAuthenticate:(BAKAuthenticationCoordinator *)coordinator {
     [coordinator.navigationController dismissViewControllerAnimated:YES completion:nil];
     [self.childCoordinators removeObject:coordinator];
-    [self.currentUserStore updateFromAPI];
+}
+
+- (void)userAuthenticated:(NSNotification *)notification {
     [self setUpRightBarButton];
+    [self.currentUserStore updateFromAPI];
 }
 
 - (void)coordinatorDidRequestDismissal:(BAKAuthenticationCoordinator *)coordinator {
@@ -166,6 +181,10 @@
         self.childCoordinators = [NSMutableArray array];
     }
     return _childCoordinators;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

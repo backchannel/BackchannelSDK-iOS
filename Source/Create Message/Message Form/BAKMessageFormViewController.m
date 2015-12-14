@@ -12,13 +12,13 @@
 #import "BAKDraft.h"
 #import "BAKAttachmentContainer.h"
 #import "BAKChannel.h"
-#import "BAKChannelPickerViewController.h"
+#import "BAKChannelPickerController.h"
 #import "BAKChannelsStore.h"
 
 @interface BAKMessageFormViewController () <BAKAttachmentsViewControllerDelegate, BAKChannelPickerDelegate>
 
 @property (nonatomic) BAKAttachmentsViewController *attachmentsViewController;
-@property (nonatomic) BAKChannelPickerViewController *channelPickerViewController;
+@property (nonatomic) BAKChannelPickerController *channelPickerController;
 @property (nonatomic) CGFloat currentKeyboardHeight;
 @property (nonatomic) BAKChannelsStore *channelsStore;
 
@@ -76,7 +76,7 @@
     self.messageForm.attachmentsView = self.attachmentsViewController.view;
     
     [self.messageForm.paperclipButton addTarget:self action:@selector(informDelegateOfAttachmentButtonPress) forControlEvents:UIControlEventTouchUpInside];
-    self.messageForm.channelField.inputView = self.channelPickerViewController.view;
+    self.messageForm.channelField.inputView = self.channelPickerController.view;
     
     self.currentKeyboardHeight = 0;
 }
@@ -153,18 +153,16 @@
     return self.attachmentsViewController.attachmentContainers;
 }
 
-- (BAKChannelPickerViewController *)channelPickerViewController {
-    if (!_channelPickerViewController) {
-        BAKChannelPickerViewController *channelPicker = [[BAKChannelPickerViewController alloc] initWithChannels:self.channelsStore.channels];
-        [self addChildViewController:channelPicker];
-        [channelPicker didMoveToParentViewController:self];
+- (BAKChannelPickerController *)channelPickerController {
+    if (!_channelPickerController) {
+        BAKChannelPickerController *channelPicker = [[BAKChannelPickerController alloc] initWithChannels:self.channelsStore.channels];
         channelPicker.delegate = self;
-        self.channelPickerViewController = channelPicker;
+        self.channelPickerController = channelPicker;
     }
-    return _channelPickerViewController;
+    return _channelPickerController;
 }
 
-- (void)channelPicker:(BAKChannelPickerViewController *)channelPicker didPickChannel:(BAKChannel *)channel {
+- (void)channelPicker:(BAKChannelPickerController *)channelPicker didPickChannel:(BAKChannel *)channel {
     [self setChannelInPicker:channel];
     if ([self.delegate respondsToSelector:@selector(messageForm:didSetChannel:)]) {
         [self.delegate messageForm:self didSetChannel:channel];
@@ -176,7 +174,7 @@
 }
 
 - (void)refreshChannels {
-    self.channelPickerViewController.channels = self.channelsStore.channels;
+    self.channelPickerController.channels = self.channelsStore.channels;
 }
 
 - (void)informDelegateOfCancellation {
