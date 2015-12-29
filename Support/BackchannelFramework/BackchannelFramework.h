@@ -15,3 +15,5 @@ FOUNDATION_EXPORT double BackchannelFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char BackchannelFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BackchannelFramework/PublicHeader.h>
+
+#import <BackchannelFramework/Backchannel.h>

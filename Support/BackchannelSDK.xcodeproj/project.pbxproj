@@ -111,7 +111,6 @@
 		346E371F1BDB99C300C90359 /* BAKThreadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BC1BDB99C300C90359 /* BAKThreadListViewController.m */; };
 		346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */; };
 		34BDC3871BDCF65C00DDF345 /* BAKDeleteMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */; };
-		34C992CF1C334435009A3347 /* BackchannelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C992CE1C334435009A3347 /* BackchannelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34C992D41C334458009A3347 /* BAKAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EA1BDB99C300C90359 /* BAKAttachmentView.m */; };
 		34C992D51C334458009A3347 /* BAKAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35EC1BDB99C300C90359 /* BAKAttachmentViewController.m */; };
 		34C992D61C334458009A3347 /* BAKAuthenticationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E35F01BDB99C300C90359 /* BAKAuthenticationData.m */; };
@@ -212,6 +211,10 @@
 		34C993351C334459009A3347 /* BAKThreadsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */; };
 		34C993361C334469009A3347 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346E35E61BDB99C300C90359 /* Images.xcassets */; };
 		34C993371C334470009A3347 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1834FD1B952515008DF301 /* APIKey.plist */; };
+		34C9936C1C334909009A3347 /* Backchannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 346E36201BDB99C300C90359 /* Backchannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C9936E1C334933009A3347 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C9936D1C334933009A3347 /* Foundation.framework */; };
+		34C993701C334937009A3347 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C9936F1C334937009A3347 /* UIKit.framework */; };
+		34C993711C3349FF009A3347 /* BackchannelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C992CE1C334435009A3347 /* BackchannelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -438,6 +441,8 @@
 		34C992CC1C334435009A3347 /* BackchannelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackchannelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C992CE1C334435009A3347 /* BackchannelFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackchannelFramework.h; sourceTree = "<group>"; };
 		34C992D01C334435009A3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C9936D1C334933009A3347 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34C9936F1C334937009A3347 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +464,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C993701C334937009A3347 /* UIKit.framework in Frameworks */,
+				34C9936E1C334933009A3347 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +475,8 @@
 		341DAFCF1B02878D008AF145 = {
 			isa = PBXGroup;
 			children = (
+				34C9936F1C334937009A3347 /* UIKit.framework */,
+				34C9936D1C334933009A3347 /* Foundation.framework */,
 				341DAFDA1B02878D008AF145 /* BackchannelSDK */,
 				341DAFF71B02878D008AF145 /* BackchannelSDKTests */,
 				34C992CD1C334435009A3347 /* BackchannelFramework */,
@@ -917,7 +926,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C992CF1C334435009A3347 /* BackchannelFramework.h in Headers */,
+				34C993711C3349FF009A3347 /* BackchannelFramework.h in Headers */,
+				34C9936C1C334909009A3347 /* Backchannel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1430,6 +1440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1443,6 +1454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.BackchannelFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1453,6 +1465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1464,6 +1477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.BackchannelFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
