@@ -438,7 +438,7 @@
 		346E36BE1BDB99C300C90359 /* BAKThreadsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKThreadsRequest.m; sourceTree = "<group>"; };
 		34BDC3851BDCF65C00DDF345 /* BAKDeleteMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKDeleteMessageRequest.h; sourceTree = "<group>"; };
 		34BDC3861BDCF65C00DDF345 /* BAKDeleteMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKDeleteMessageRequest.m; sourceTree = "<group>"; };
-		34C992CC1C334435009A3347 /* BackchannelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackchannelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C992CC1C334435009A3347 /* Backchannel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backchannel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C992CE1C334435009A3347 /* BackchannelFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackchannelFramework.h; sourceTree = "<group>"; };
 		34C992D01C334435009A3347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34C9936D1C334933009A3347 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -489,7 +489,7 @@
 			children = (
 				341DAFD81B02878D008AF145 /* BackchannelSDK.app */,
 				341DAFF41B02878D008AF145 /* BackchannelSDKTests.xctest */,
-				34C992CC1C334435009A3347 /* BackchannelFramework.framework */,
+				34C992CC1C334435009A3347 /* Backchannel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -969,9 +969,9 @@
 			productReference = 341DAFF41B02878D008AF145 /* BackchannelSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		34C992CB1C334435009A3347 /* BackchannelFramework */ = {
+		34C992CB1C334435009A3347 /* Backchannel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34C992D31C334435009A3347 /* Build configuration list for PBXNativeTarget "BackchannelFramework" */;
+			buildConfigurationList = 34C992D31C334435009A3347 /* Build configuration list for PBXNativeTarget "Backchannel" */;
 			buildPhases = (
 				34C992C71C334435009A3347 /* Sources */,
 				34C992C81C334435009A3347 /* Frameworks */,
@@ -982,9 +982,9 @@
 			);
 			dependencies = (
 			);
-			name = BackchannelFramework;
+			name = Backchannel;
 			productName = BackchannelFramework;
-			productReference = 34C992CC1C334435009A3347 /* BackchannelFramework.framework */;
+			productReference = 34C992CC1C334435009A3347 /* Backchannel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1025,7 +1025,7 @@
 			targets = (
 				341DAFD71B02878D008AF145 /* BackchannelSDK */,
 				341DAFF31B02878D008AF145 /* BackchannelSDKTests */,
-				34C992CB1C334435009A3347 /* BackchannelFramework */,
+				34C992CB1C334435009A3347 /* Backchannel */,
 			);
 		};
 /* End PBXProject section */
@@ -1454,7 +1454,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.BackchannelFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.Backchannel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1480,7 +1480,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.BackchannelFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = io.Backchannel.Backchannel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1521,13 +1521,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34C992D31C334435009A3347 /* Build configuration list for PBXNativeTarget "BackchannelFramework" */ = {
+		34C992D31C334435009A3347 /* Build configuration list for PBXNativeTarget "Backchannel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34C992D11C334435009A3347 /* Debug */,
 				34C992D21C334435009A3347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "34C992CB1C334435009A3347"
-               BuildableName = "BackchannelFramework.framework"
-               BlueprintName = "BackchannelFramework"
+               BuildableName = "Backchannel.framework"
+               BlueprintName = "Backchannel"
                ReferencedContainer = "container:BackchannelSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "34C992CB1C334435009A3347"
-            BuildableName = "BackchannelFramework.framework"
-            BlueprintName = "BackchannelFramework"
+            BuildableName = "Backchannel.framework"
+            BlueprintName = "Backchannel"
             ReferencedContainer = "container:BackchannelSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "34C992CB1C334435009A3347"
-            BuildableName = "BackchannelFramework.framework"
-            BlueprintName = "BackchannelFramework"
+            BuildableName = "Backchannel.framework"
+            BlueprintName = "Backchannel"
             ReferencedContainer = "container:BackchannelSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
