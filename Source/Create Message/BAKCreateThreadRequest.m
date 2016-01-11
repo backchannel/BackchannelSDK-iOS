@@ -10,6 +10,7 @@
 #import "BAKAttachment.h"
 #import "BAKDraft.h"
 #import "BAKThread.h"
+#import "BAKMessageMetadata.h"
 
 @implementation BAKCreateThreadRequest
 
@@ -50,6 +51,7 @@
     return @{
              @"body": self.draft.body,
              @"attachmentIDs": self.draft.attachmentIDs,
+             @"metadata": [[BAKMessageMetadata new] metadataDictionary],
              };
 }
 
