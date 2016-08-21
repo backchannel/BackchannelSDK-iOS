@@ -17,6 +17,8 @@
 @property (nonatomic) NSString *ID;
 @property (nonatomic) NSString *subject;
 @property (nonatomic) BAKMessage *newestMessage;
+@property (nonatomic) NSString *postEmail;
+
 
 @end
 

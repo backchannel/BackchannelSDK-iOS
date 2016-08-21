@@ -18,6 +18,7 @@
     _ID = dictionary[@"ID"];
     _name = dictionary[@"name"];
     _icon = [[BAKAttachment alloc] initWithDictionary:dictionary[@"icon"]];
+    _postEmail = dictionary[@"postEmail"];
     
     return self;
 }
@@ -33,6 +34,7 @@
     _ID = [decoder decodeObjectOfClass:[NSString class] forKey:@"ID"];
     _name = [decoder decodeObjectOfClass:[NSString class] forKey:@"name"];
     _icon = [decoder decodeObjectOfClass:[BAKAttachment class] forKey:@"icon"];
+    _postEmail = [decoder decodeObjectOfClass:[NSString class] forKey:@"postEmail"];
 
     return self;
 }
@@ -41,6 +43,7 @@
     [encoder encodeObject:self.ID forKey:@"ID"];
     [encoder encodeObject:self.name forKey:@"name"];
     [encoder encodeObject:self.icon forKey:@"icon"];
+    [encoder encodeObject:self.postEmail forKey:@"postEmail"];
 }
 
 + (BOOL)supportsSecureCoding {

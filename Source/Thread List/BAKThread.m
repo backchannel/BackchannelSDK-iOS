@@ -15,10 +15,12 @@
     self = [super init];
     if (!self) return nil;
     
+    NSLog(@"%@", dictionary);
     _ID = dictionary[@"ID"];
     _subject = dictionary[@"subject"];
     _newestMessage = [[BAKMessage alloc] initWithDictionary:dictionary[@"newestMessage"]];
-    
+    _postEmail = dictionary[@"postEmail"];
+
     return self;
 }
 
@@ -33,7 +35,8 @@
     _ID = [decoder decodeObjectOfClass:[NSString class] forKey:@"ID"];
     _subject = [decoder decodeObjectOfClass:[NSString class] forKey:@"subject"];
     _newestMessage = [decoder decodeObjectOfClass:[BAKMessage class] forKey:@"newestMessage"];
-    
+    _postEmail = [decoder decodeObjectOfClass:[NSString class] forKey:@"postEmail"];
+
     return self;
 }
 
@@ -41,6 +44,7 @@
     [encoder encodeObject:self.ID forKey:@"ID"];
     [encoder encodeObject:self.subject forKey:@"subject"];
     [encoder encodeObject:self.newestMessage forKey:@"newestMessage"];
+    [encoder encodeObject:self.postEmail forKey:@"postEmail"];
 }
 
 + (BOOL)supportsSecureCoding {

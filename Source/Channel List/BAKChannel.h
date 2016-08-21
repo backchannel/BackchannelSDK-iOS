@@ -17,6 +17,7 @@
 @property (nonatomic) NSString *ID;
 @property (nonatomic) NSString *name;
 @property (nonatomic) BAKAttachment *icon;
+@property (nonatomic) NSString *postEmail;
 
 @end
 
