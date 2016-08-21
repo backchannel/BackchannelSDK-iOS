@@ -10,10 +10,11 @@
 
 @interface BAKEmailContext : NSObject
 
-- (instancetype)initWithEmailAddress:(NSString *)emailAddress;
+- (instancetype)initWithEmailAddress:(NSString *)emailAddress subject:(NSString *)subject;
 
 @property (nonatomic) NSString *emailAddress;
+@property (nonatomic) NSString *subject;
 
-@property (nonatomic, readonly) NSURL *emailURL;
+@property (nonatomic, readonly) NSArray *toRecipients;
 
 @end

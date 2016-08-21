@@ -10,17 +10,18 @@
 
 @implementation BAKEmailContext
 
-- (instancetype)initWithEmailAddress:(NSString *)emailAddress {
+- (instancetype)initWithEmailAddress:(NSString *)emailAddress subject:(NSString *)subject {
     self = [super init];
     if (!self) return nil;
     
     _emailAddress = emailAddress;
+    _subject = subject;
     
     return self;
 }
 
-- (NSURL *)emailURL {
-    return [NSURL URLWithString:[NSString stringWithFormat:@"mailto:%@", self.emailAddress]];
+- (NSArray *)toRecipients {
+    return @[self.emailAddress];
 }
 
 @end
