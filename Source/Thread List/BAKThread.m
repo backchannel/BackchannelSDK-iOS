@@ -15,7 +15,6 @@
     self = [super init];
     if (!self) return nil;
     
-    NSLog(@"%@", dictionary);
     _ID = dictionary[@"ID"];
     _subject = dictionary[@"subject"];
     _newestMessage = [[BAKMessage alloc] initWithDictionary:dictionary[@"newestMessage"]];
