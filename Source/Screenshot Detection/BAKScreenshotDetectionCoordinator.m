@@ -93,7 +93,7 @@
 }
 
 - (void)showAuthentication {
-    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:self.navigationController configuration:self.configuration];
+    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:self.navigationController emailContext:nil configuration:self.configuration];
     authCoordinator.delegate = self;
     [authCoordinator start];
     [self.childCoordinators addObject:authCoordinator];

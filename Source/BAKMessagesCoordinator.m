@@ -19,6 +19,9 @@
 #import "BAKCache.h"
 #import "BAKSendableRequest.h"
 #import "BAKLogoutRequest.h"
+#import "BAKEmailContext.h"
+#import "BAKThread.h"
+#import "BAKChannel.h"
 
 @interface BAKMessagesCoordinator () <BAKAuthenticationDelegate, BAKChannelListDelegate, BAKThreadListDelegate, BAKMessageListDelegate, BAKAuthenticatingCreateMessageCoordinatorDelegate, BAKEditProfileDelegate, BAKCurrentUserStoreDelegate>
 
@@ -85,14 +88,16 @@
 }
 
 - (void)threadListDidTapCompose:(BAKThreadListViewController *)threadList {
-    BAKAuthenticatingCreateMessageCoordinator *createThread = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForNewThreadInChannel:threadList.channel viewController:self.navigationController configuration:self.configuration];
+    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:threadList.channel.postEmail];
+    BAKAuthenticatingCreateMessageCoordinator *createThread = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForNewThreadInChannel:threadList.channel viewController:self.navigationController emailContext:emailContext configuration:self.configuration];
     createThread.delegate = self;
     [self.childCoordinators addObject:createThread];
     [createThread start];
 }
 
 - (void)messageListDidTapCompose:(BAKMessageListViewController *)messageList {
-    BAKAuthenticatingCreateMessageCoordinator *createMessage = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForExistingThread:messageList.thread viewController:self.navigationController configuration:self.configuration];
+    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:messageList.thread.postEmail];
+    BAKAuthenticatingCreateMessageCoordinator *createMessage = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForExistingThread:messageList.thread viewController:self.navigationController emailContext:emailContext configuration:self.configuration];
     createMessage.delegate = self;
     [self.childCoordinators addObject:createMessage];
     [createMessage start];
@@ -154,7 +159,7 @@
 
 - (void)showAuthentication:(id)sender {
     UINavigationController *navigationController = [UINavigationController new];
-    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:navigationController configuration:self.configuration];
+    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:navigationController emailContext:nil configuration:self.configuration];
     authCoordinator.delegate = self;
     [authCoordinator start];
     [self.childCoordinators addObject:authCoordinator];

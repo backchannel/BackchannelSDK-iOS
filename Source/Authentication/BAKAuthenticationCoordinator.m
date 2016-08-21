@@ -20,6 +20,7 @@
 #import "BAKForgotPasswordViewController.h"
 #import "BAKForgotPasswordRequest.h"
 #import "BAKCurrentUserStore.h"
+#import "BAKEmailContext.h"
 
 NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordinatorDidLogUserIn";
 
@@ -32,11 +33,12 @@ NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordina
 
 @implementation BAKAuthenticationCoordinator
 
-- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController configuration:(BAKRemoteConfiguration *)configuration {
+- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration {
     self = [super init];
     if (!self) return nil;
     
     _navigationController = navigationController;
+    _emailContext = emailContext;
     _configuration = configuration;
     
     return self;
