@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A1834FE1B952515008DF301 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1834FD1B952515008DF301 /* APIKey.plist */; };
 		1A62D0E91B501AE600FFD227 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A62D0E81B501AE600FFD227 /* BCRootViewController.m */; };
+		1AF54F3E1D69438700557CCB /* BAKEmailContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF54F3D1D69438700557CCB /* BAKEmailContext.m */; };
 		341DAFDE1B02878D008AF145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFDD1B02878D008AF145 /* main.m */; };
 		341DAFE11B02878D008AF145 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFE01B02878D008AF145 /* AppDelegate.m */; };
 		341DAFFB1B02878D008AF145 /* BackchannelSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DAFFA1B02878D008AF145 /* BackchannelSDKTests.m */; };
@@ -231,6 +232,8 @@
 		1A1834FD1B952515008DF301 /* APIKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		1A62D0E71B501AE600FFD227 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
 		1A62D0E81B501AE600FFD227 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
+		1AF54F3C1D69438700557CCB /* BAKEmailContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKEmailContext.h; sourceTree = "<group>"; };
+		1AF54F3D1D69438700557CCB /* BAKEmailContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKEmailContext.m; sourceTree = "<group>"; };
 		341DAFD81B02878D008AF145 /* BackchannelSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackchannelSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		341DAFDC1B02878D008AF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		341DAFDD1B02878D008AF145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -708,6 +711,8 @@
 				346E364F1BDB99C300C90359 /* BAKMessageMetadata.h */,
 				346E36501BDB99C300C90359 /* BAKMessageMetadata.m */,
 				346E36511BDB99C300C90359 /* Message Form */,
+				1AF54F3C1D69438700557CCB /* BAKEmailContext.h */,
+				1AF54F3D1D69438700557CCB /* BAKEmailContext.m */,
 			);
 			path = "Create Message";
 			sourceTree = "<group>";
@@ -1106,6 +1111,7 @@
 				346E37041BDB99C300C90359 /* BAKMessageListViewController.m in Sources */,
 				346E36D81BDB99C300C90359 /* BAKFirstRunViewController.m in Sources */,
 				346E36FE1BDB99C300C90359 /* BAKChooseImageCoordinator.m in Sources */,
+				1AF54F3E1D69438700557CCB /* BAKEmailContext.m in Sources */,
 				346E36D11BDB99C300C90359 /* BAKProfile.m in Sources */,
 				346E37201BDB99C300C90359 /* BAKThreadsRequest.m in Sources */,
 				346E36CE1BDB99C300C90359 /* BAKCreateProfileCoordinator.m in Sources */,
