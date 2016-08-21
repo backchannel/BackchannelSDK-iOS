@@ -21,10 +21,11 @@
 #import "BAKForgotPasswordRequest.h"
 #import "BAKCurrentUserStore.h"
 #import "BAKEmailContext.h"
+#import <MessageUI/MessageUI.h>
 
 NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordinatorDidLogUserIn";
 
-@interface BAKAuthenticationCoordinator () <BAKFirstRunViewControllerDelegate, BAKAuthenticationViewControllerDelegate, BAKCreateProfileDelegate, BAKForgotPasswordViewControllerDelegate>
+@interface BAKAuthenticationCoordinator () <BAKFirstRunViewControllerDelegate, BAKAuthenticationViewControllerDelegate, BAKCreateProfileDelegate, BAKForgotPasswordViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic) NSMutableArray *childCoordinators;
 @property (nonatomic) BOOL requestInProgress;
@@ -63,6 +64,18 @@ NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordina
     [signInViewController showKeyboard];
     signInViewController.delegate = self;
     [self.navigationController pushViewController:signInViewController animated:YES];
+}
+
+- (void)firstRunViewControllerDidTapPostViaEmail:(BAKFirstRunViewController *)firstRunViewController {
+    MFMailComposeViewController *mailComposeViewController = [[MFMailComposeViewController alloc] init];
+    [mailComposeViewController setToRecipients:self.emailContext.toRecipients];
+    [mailComposeViewController setSubject:self.emailContext.subject];
+        mailComposeViewController.mailComposeDelegate = self;
+    [firstRunViewController presentViewController:mailComposeViewController animated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)authenticationViewController:(BAKAuthenticationViewController *)authenticationViewController didTapForgotPasswordButtonWithEmail:(NSString *)email {
