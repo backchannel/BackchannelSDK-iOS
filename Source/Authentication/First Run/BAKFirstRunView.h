@@ -10,7 +10,12 @@
 
 @interface BAKFirstRunView : UIView
 
+- (instancetype)initWithEmailButtonShowing:(BOOL)emailButtonShowing;
+
+@property (nonatomic, readonly) BOOL emailButtonShowing;
+
 @property (nonatomic, readonly) UIButton *createAccountButton;
 @property (nonatomic, readonly) UIButton *signInButton;
+@property (nonatomic, readonly) UIButton *postViaEmailButton;
 
 @end

@@ -11,11 +11,11 @@
 
 @implementation BAKFirstRunLayout
 
-- (instancetype)initWithWorkingRect:(CGRect)workingRect {
+- (instancetype)initWithWorkingRect:(CGRect)workingRect emailButtonShowing:(BOOL)emailButtonShowing {
     self = [super init];
     if (!self) return nil;
     
-    CGRect scrollRect = CGRectZero, createAccountRect = CGRectZero, signInRect = CGRectZero, backchannelRect = CGRectZero, descriptionRect = CGRectZero;
+    CGRect scrollRect = CGRectZero, createAccountRect = CGRectZero, signInRect = CGRectZero, postViaEmailRect = CGRectZero, backchannelRect = CGRectZero, descriptionRect = CGRectZero;
     
     scrollRect = workingRect;
     
@@ -33,10 +33,17 @@
     workingRect = BAKRectTrim(workingRect, self.interButtonSpacing, CGRectMinYEdge);
     CGRectDivide(workingRect, &signInRect, &workingRect, self.buttonHeight, CGRectMinYEdge);
     signInRect = CGRectInset(signInRect, -1, 0);
+    
+    if (emailButtonShowing) {
+        workingRect = BAKRectTrim(workingRect, self.interButtonSpacing, CGRectMinYEdge);
+        CGRectDivide(workingRect, &postViaEmailRect, &workingRect, self.buttonHeight, CGRectMinYEdge);
+        postViaEmailRect = CGRectInset(postViaEmailRect, -1, 0);
+    }
 
     _scrollRect = scrollRect;
     _createAccountRect = createAccountRect;
     _signInRect = signInRect;
+    _postViaEmailRect = postViaEmailRect;
     _backchannelRect = backchannelRect;
     _descriptionRect = descriptionRect;
 
@@ -64,7 +71,7 @@
 }
 
 - (CGFloat)interButtonSpacing {
-    return 44;
+    return 22;
 }
 
 - (CGFloat)leftAndRightDescriptionPadding {

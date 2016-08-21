@@ -16,12 +16,22 @@
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) UIButton *createAccountButton;
 @property (nonatomic) UIButton *signInButton;
+@property (nonatomic) UIButton *postViaEmailButton;
 @property (nonatomic) UIImageView *backchannelImageView;
 @property (nonatomic) UILabel *descriptionLabel;
 
 @end
 
 @implementation BAKFirstRunView
+
+- (instancetype)initWithEmailButtonShowing:(BOOL)emailButtonShowing {
+    self = [super init];
+    if (!self) return nil;
+    
+    _emailButtonShowing = emailButtonShowing;
+    
+    return self;
+}
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
@@ -78,16 +88,27 @@
     return _signInButton;
 }
 
+- (UIButton *)postViaEmailButton {
+    if (!_postViaEmailButton) {
+        UIButton *postViaEmailButton = [BAKAuthenticationButton buttonWithType:UIButtonTypeSystem];
+        [postViaEmailButton setTitle:@"Post Via Email" forState:UIControlStateNormal];
+        [self.scrollView addSubview:postViaEmailButton];
+        self.postViaEmailButton = postViaEmailButton;
+    }
+    return _postViaEmailButton;
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    BAKFirstRunLayout *layout = [[BAKFirstRunLayout alloc] initWithWorkingRect:self.bounds];
+    BAKFirstRunLayout *layout = [[BAKFirstRunLayout alloc] initWithWorkingRect:self.bounds emailButtonShowing:self.emailButtonShowing];
     
     self.scrollView.frame = layout.scrollRect;
     self.backchannelImageView.frame = layout.backchannelRect;
     self.descriptionLabel.frame = layout.descriptionRect;
     self.createAccountButton.frame = layout.createAccountRect;
     self.signInButton.frame = layout.signInRect;
+    self.postViaEmailButton.frame = layout.postViaEmailRect;
 }
 
 @end

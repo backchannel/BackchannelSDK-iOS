@@ -12,11 +12,12 @@
 
 @interface BAKFirstRunLayout : NSObject
 
-- (instancetype)initWithWorkingRect:(CGRect)workingRect;
+- (instancetype)initWithWorkingRect:(CGRect)workingRect emailButtonShowing:(BOOL)emailButtonShowing;
 
 @property (nonatomic, readonly) CGRect scrollRect;
 @property (nonatomic, readonly) CGRect createAccountRect;
 @property (nonatomic, readonly) CGRect signInRect;
+@property (nonatomic, readonly) CGRect postViaEmailRect;
 @property (nonatomic, readonly) CGRect backchannelRect;
 @property (nonatomic, readonly) CGRect descriptionRect;
 

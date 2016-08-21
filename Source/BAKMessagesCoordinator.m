@@ -88,7 +88,7 @@
 }
 
 - (void)threadListDidTapCompose:(BAKThreadListViewController *)threadList {
-    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:threadList.channel.postEmail];
+    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:threadList.channel.postEmail subject:nil];
     BAKAuthenticatingCreateMessageCoordinator *createThread = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForNewThreadInChannel:threadList.channel viewController:self.navigationController emailContext:emailContext configuration:self.configuration];
     createThread.delegate = self;
     [self.childCoordinators addObject:createThread];
@@ -96,7 +96,7 @@
 }
 
 - (void)messageListDidTapCompose:(BAKMessageListViewController *)messageList {
-    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:messageList.thread.postEmail];
+    BAKEmailContext *emailContext = [[BAKEmailContext alloc] initWithEmailAddress:messageList.thread.postEmail subject:messageList.thread.subject];
     BAKAuthenticatingCreateMessageCoordinator *createMessage = [[BAKAuthenticatingCreateMessageCoordinator alloc] initForExistingThread:messageList.thread viewController:self.navigationController emailContext:emailContext configuration:self.configuration];
     createMessage.delegate = self;
     [self.childCoordinators addObject:createMessage];
