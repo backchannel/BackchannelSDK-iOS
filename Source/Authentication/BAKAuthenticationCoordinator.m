@@ -34,7 +34,7 @@ NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordina
 
 @implementation BAKAuthenticationCoordinator
 
-- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration {
+- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration {
     self = [super init];
     if (!self) return nil;
     
@@ -46,7 +46,7 @@ NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordina
 }
 
 - (void)start {
-    BAKFirstRunViewController *firstRunViewcontroller = [[BAKFirstRunViewController alloc] initWithEmailButtonShowing:(self.emailContext != nil)];
+    BAKFirstRunViewController *firstRunViewcontroller = [[BAKFirstRunViewController alloc] initWithEmailButtonShowing:self.emailContext.canSendMail];
     firstRunViewcontroller.delegate = self;
     firstRunViewcontroller.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Dismiss" style:UIBarButtonItemStylePlain target:self action:@selector(dismissBackchannel:)];
     [self.navigationController pushViewController:firstRunViewcontroller animated:NO];

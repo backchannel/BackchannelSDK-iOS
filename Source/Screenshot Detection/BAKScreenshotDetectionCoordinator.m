@@ -12,6 +12,7 @@
 #import "BAKAssetFetcher.h"
 #import "BAKSession.h"
 #import "BAKAuthenticationCoordinator.h"
+#import "BAKEmailContext.h"
 
 @interface BAKScreenshotDetectionCoordinator () <BAKAuthenticationDelegate, BAKCreateMessageDelegate>
 
@@ -93,7 +94,7 @@
 }
 
 - (void)showAuthentication {
-    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:self.navigationController emailContext:nil configuration:self.configuration];
+    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:self.navigationController emailContext:[BAKNullEmailContext new] configuration:self.configuration];
     authCoordinator.delegate = self;
     [authCoordinator start];
     [self.childCoordinators addObject:authCoordinator];

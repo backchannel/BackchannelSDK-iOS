@@ -12,7 +12,9 @@
 
 extern NSString *BAKAuthenticationCoordinatorDidLogUserIn;
 
-@class BAKAuthenticationCoordinator, BAKSession, BAKRemoteConfiguration, BAKEmailContext;
+@class BAKAuthenticationCoordinator, BAKSession, BAKRemoteConfiguration;
+
+@protocol BAKEmailContext;
 
 @protocol BAKAuthenticationDelegate <NSObject>
 
@@ -23,10 +25,10 @@ extern NSString *BAKAuthenticationCoordinatorDidLogUserIn;
 
 @interface BAKAuthenticationCoordinator : NSObject
 
-- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration;
+- (instancetype)initWithNavigationViewController:(UINavigationController *)navigationController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration;
 
 @property (readonly) BAKRemoteConfiguration *configuration;
-@property (readonly) BAKEmailContext *emailContext;
+@property (readonly) id<BAKEmailContext> emailContext;
 
 @property (nonatomic, readonly) UINavigationController *navigationController;
 

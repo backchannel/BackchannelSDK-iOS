@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class BAKRemoteConfiguration, BAKThread, BAKChannel, BAKEmailContext;
+@class BAKRemoteConfiguration, BAKThread, BAKChannel;
+
+@protocol BAKEmailContext;
 
 @import UIKit;
 
@@ -24,13 +26,13 @@
 
 @interface BAKAuthenticatingCreateMessageCoordinator : NSObject
 
-- (instancetype)initForNewThreadInChannel:(BAKChannel *)channel viewController:(UIViewController *)viewController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration;
+- (instancetype)initForNewThreadInChannel:(BAKChannel *)channel viewController:(UIViewController *)viewController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration;
 
-- (instancetype)initForExistingThread:(BAKThread *)thread viewController:(UIViewController *)viewController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration;
+- (instancetype)initForExistingThread:(BAKThread *)thread viewController:(UIViewController *)viewController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration;
 
 @property (nonatomic, readonly) UIViewController *viewController;
 @property (nonatomic, readonly) BAKRemoteConfiguration *configuration;
-@property (nonatomic, readonly) BAKEmailContext *emailContext;
+@property (nonatomic, readonly) id<BAKEmailContext> emailContext;
 
 @property (nonatomic, weak) id<BAKAuthenticatingCreateMessageCoordinatorDelegate> delegate;
 

@@ -7,6 +7,14 @@
 //
 
 #import "BAKEmailContext.h"
+#import <MessageUI/MessageUI.h>
+
+@interface BAKEmailContext()
+
+@property (nonatomic) NSString *emailAddress;
+@property (nonatomic) NSString *subject;
+
+@end
 
 @implementation BAKEmailContext
 
@@ -24,4 +32,30 @@
     return @[self.emailAddress];
 }
 
+- (BOOL)canSendMail {
+    return [MFMailComposeViewController canSendMail];
+}
+
 @end
+
+
+@implementation BAKNullEmailContext
+
+- (NSArray *)toRecipients {
+    return @[];
+}
+
+- (NSString *)emailAddress {
+    return @"";
+}
+
+- (NSString *)subject {
+    return @"";
+}
+
+- (BOOL)canSendMail {
+    return NO;
+}
+
+@end
+

@@ -32,7 +32,7 @@
     return self;
 }
 
-- (instancetype)initForNewThreadInChannel:(BAKChannel *)channel viewController:(UIViewController *)viewController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration {
+- (instancetype)initForNewThreadInChannel:(BAKChannel *)channel viewController:(UIViewController *)viewController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration {
     self = [self init];
     if (!self) return nil;
 
@@ -44,7 +44,7 @@
     return self;
 }
 
-- (instancetype)initForExistingThread:(BAKThread *)thread viewController:(UIViewController *)viewController emailContext:(BAKEmailContext *)emailContext configuration:(BAKRemoteConfiguration *)configuration {
+- (instancetype)initForExistingThread:(BAKThread *)thread viewController:(UIViewController *)viewController emailContext:(id<BAKEmailContext>)emailContext configuration:(BAKRemoteConfiguration *)configuration {
     self = [self init];
     if (!self) return nil;
     

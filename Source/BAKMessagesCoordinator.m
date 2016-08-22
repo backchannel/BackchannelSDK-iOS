@@ -159,7 +159,7 @@
 
 - (void)showAuthentication:(id)sender {
     UINavigationController *navigationController = [UINavigationController new];
-    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:navigationController emailContext:nil configuration:self.configuration];
+    BAKAuthenticationCoordinator *authCoordinator = [[BAKAuthenticationCoordinator alloc] initWithNavigationViewController:navigationController emailContext:[BAKNullEmailContext new] configuration:self.configuration];
     authCoordinator.delegate = self;
     [authCoordinator start];
     [self.childCoordinators addObject:authCoordinator];

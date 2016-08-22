@@ -8,13 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BAKEmailContext : NSObject
+@protocol BAKEmailContext <NSObject>
+
+@property (nonatomic, readonly) BOOL canSendMail;
+@property (nonatomic, readonly) NSString *emailAddress;
+@property (nonatomic, readonly) NSString *subject;
+
+@property (nonatomic, readonly) NSArray *toRecipients;
+
+
+@end
+
+@interface BAKEmailContext : NSObject<BAKEmailContext>
 
 - (instancetype)initWithEmailAddress:(NSString *)emailAddress subject:(NSString *)subject;
 
-@property (nonatomic) NSString *emailAddress;
-@property (nonatomic) NSString *subject;
 
-@property (nonatomic, readonly) NSArray *toRecipients;
+@end
+
+@interface BAKNullEmailContext : NSObject<BAKEmailContext>
 
 @end
