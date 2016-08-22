@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Backchannel"
-  s.version      = "1.0.1"
+  s.version      = "1.1"
   s.license      = 'MIT'
   s.summary      = "Backchannel is a service for bringing discussion to your app’s beta."
   s.author       = { "Soroush Khanlou" => "soroush@backchannel.io" }
