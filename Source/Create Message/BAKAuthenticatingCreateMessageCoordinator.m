@@ -79,7 +79,7 @@
 - (void)startCreation {
     self.createMessageCoordinator.delegate = self;
     [self.createMessageCoordinator start];
-    [self.childCoordinators addObject:self.childCoordinators];
+    [self.childCoordinators addObject:self.createMessageCoordinator];
 }
 
 - (void)coordinatorDidAuthenticate:(BAKAuthenticationCoordinator *)coordinator {
