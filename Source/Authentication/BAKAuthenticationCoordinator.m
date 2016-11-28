@@ -123,11 +123,13 @@ NSString *BAKAuthenticationCoordinatorDidLogUserIn = @"BAKAuthenticationCoordina
 
 - (void)createProfileCoordinator:(BAKCreateProfileCoordinator *)profileCoordinator didUpdateUser:(BAKUser *)user {
     [self.navigationController popViewControllerAnimated:NO];
+    [self.childCoordinators removeObject:profileCoordinator];
     [self informDelegateOfSuccess];
 }
 
 - (void)createProfileCoordinatorDidSkip:(BAKCreateProfileCoordinator *)createProfileCoordinator {
     [self.navigationController popViewControllerAnimated:NO];
+    [self.childCoordinators removeObject:createProfileCoordinator];
     [self informDelegateOfSuccess];
 }
 
