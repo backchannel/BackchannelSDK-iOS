@@ -12,6 +12,7 @@ Backchannel is a great citizen in your app.
 * Backchannel has a three-letter class prefix, `BAK`, to prevent collisions.
 * Backchannel doesn't do any swizzling.
 * Backchannel has zero categories. Your app's Foundation classes are safe.
+* Backchannel unit tests coverage is probably more real mesure of it's quality :sadpanda:
 
 ## Requirements
 
